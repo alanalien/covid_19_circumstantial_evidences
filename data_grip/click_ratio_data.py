@@ -11,7 +11,9 @@ url = "https://awis.api.alexa.com/api?" \
 
 payload = {}
 headers = {
-  'x-api-key': 'HxMdtEu7D11gnzv99BOcA55r3gYK97IK8yluYGae'
+  'x-api-key': '
+       ###### Your API Key #####
+       '
 }
 
 response = requests.request("GET", url, headers=headers, data=payload)
