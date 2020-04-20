@@ -5,6 +5,10 @@ While there are hundreds of covid-19 data visualization dashboards around, there
 
 My goal in this project is to learn how to automatize the data visualization process.
 
+## 2020-04-20 ##
+Optimized data retrieving codes;
+developed some pilot plots;
+
 ## 2020-04-16 ##
 First version of python data retriever.
 * Get COVID-19 time series data from [JHU CSSE](https://github.com/CSSEGISandData/COVID-19)
