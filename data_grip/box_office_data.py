@@ -163,25 +163,30 @@ for idx, my_codes in enumerate(mojo_countries.loc[:, 'country_code']):
 
 
 plt.cla()
-box_office_df.loc[:, :].plot()
+box_office_df.loc[:, :].plot(legend=None)
 
+box_office_df.to_csv('temp/data/boxOffice_20200420.csv')
 
 """
 TO BE UPDATE:
-drop 'central america', 'east africa' and 'international' rows;
+drop 'central america', 'east africa' and 'international' rows; -- done
 sum 2 switzerland rows;
 rename russia/cis;
 drop 'CN' (China) and use alter data source;
+add 'US'
 """
 
-for index, rows in mojo_countries.iterrows():  # iterrows does not preserve dtypes across the rows
+for index, rows in mojo_countries.iterrows():
     if len(rows['country_code']) > 2:
         print(rows['country_name'], rows['country_code'])
 
 # Central America XC4
 # East Africa XKN
-# International FOREIGN
+# International FOREIGN -- removed
 # Russia/CIS XR2
 # Serbia and Montenegro XS2
 # Switzerland (French) XS3
 # Switzerland (German) XS1
+
+# US
+

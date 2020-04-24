@@ -2,6 +2,7 @@ import pandas as pd
 from xml.etree import ElementTree as ET
 import requests
 from datetime import datetime
+import matplotlib.pyplot as plt
 
 q_range = {'Range': 1}
 q_resp_group = {'ResponseGroup': 'History'}
@@ -12,14 +13,15 @@ url = "https://awis.api.alexa.com/api?" \
        "Action=TrafficHistory" \
        "&Range=31" \
        "&ResponseGroup=History" \
-       "&Url=https://www.who.int/"\
+       "&Url=https://coronavirus.jhu.edu/map.html"\
        "&Start=20200301"\
 
 payload = {}
 headers = {
-  'x-api-key': '''
-  ### your_api_key_here ###
-  '''
+    'x-api-key': 'VOFKt7evtH7bLh4KzbkLF788cQWH9USzwhQ3P8k8'
+  # 'x-api-key': '''
+  # ### your_api_key_here ###
+  # '''
 }
 
 response = requests.request("GET", url, headers=headers, data=payload)
@@ -44,11 +46,17 @@ root2 = ET.fromstring(historical_data)
 
 for data in root2:
     date = data[0].text
-    ppm = data[1][0].text
-    ppu = data[1][1].text
-    rank = data[2].text
-    rpm = data[3][0].text
+    ppm = pd.to_numeric(data[1][0].text)
+    ppu = pd.to_numeric(data[1][1].text)
+    rank = pd.to_numeric(data[2].text)
+    rpm = pd.to_numeric(data[3][0].text)
     new_row = [date, ppm, ppu, rank, rpm]
     click_ratio_table.loc[len(click_ratio_table)] = new_row
 
-print(click_ratio_table)
+
+click_ratio_table = pd.DataFrame(click_ratio_table)
+
+plt.cla()
+plt.plot(click_ratio_table.loc[:, 'Date'], click_ratio_table.loc[:, 'Page_View_Per_Million'])
+plt.title('JHU Page_View_Per_Million')
+# click_ratio_table.shape()

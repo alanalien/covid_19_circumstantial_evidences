@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 # below are for mapping purpose
 import geopandas as gpd
+import shapefile
 import dbfpy
 # arcpy might be better if have access
 # https://gis.stackexchange.com/questions/44692/accessing-attribute-table-within-shapefile-and-replace-values
@@ -11,14 +12,14 @@ import requests
 import io
 
 
-path = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/"
-file1 = "time_series_covid19_confirmed_global.csv"
-file2 = "time_series_covid19_deaths_global.csv"
-file3 = "time_series_covid19_recovered_global.csv"
-
-confirmed = pd.read_csv(path + file1)
-death = pd.read_csv(path + file2)
-recovered = pd.read_csv(path + file3)
+# path = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/"
+# file1 = "time_series_covid19_confirmed_global.csv"
+# file2 = "time_series_covid19_deaths_global.csv"
+# file3 = "time_series_covid19_recovered_global.csv"
+#
+# confirmed = pd.read_csv(path + file1)
+# death = pd.read_csv(path + file2)
+# recovered = pd.read_csv(path + file3)
 
 
 def date_formatting(df):  # rename columns by date
@@ -103,14 +104,15 @@ def country_code_update(df):
     return new_df
 
 
-def get_df_name(df):  # get data frame name for further usage
-    df_name = [i for i in globals() if globals()[i] is df][0]
-    # https://stackoverflow.com/questions/31727333/get-the-name-of-a-pandas-dataframe
-    return df_name
+# This won't work when being called
+# def get_df_name(df):  # get data frame name for further usage
+#     df_name = [i for i in globals() if globals()[i] is df][0]
+#     # https://stackoverflow.com/questions/31727333/get-the-name-of-a-pandas-dataframe
+#     return df_name
+# So add new argus 'df_name' here to replace
 
-
-def remodeling(df):  # transposing, column renaming, and date format converting
-    df_name = get_df_name(df)
+def remodeling(df, df_name):  # transposing, column renaming, and date format converting
+    # df_name = get_df_name(df)
     new_df = country_code_update(df)
     new_df.rename(columns={'country_code': 'Date'}, inplace=True)
     new_df = new_df.set_index('Date').T  # Date and its value (string) became index
@@ -120,11 +122,10 @@ def remodeling(df):  # transposing, column renaming, and date format converting
     return new_df
 
 
-CF = remodeling(confirmed)
-DT = remodeling(death)
-CU = remodeling(recovered)
+# CF = remodeling(confirmed, 'confirmed')
+# DT = remodeling(death, 'death')
+# CU = remodeling(recovered, 'CU')
 
-test = remodeling(confirmed)
 # print(test.dtypes)
 
 # for col in test.columns:
@@ -132,43 +133,9 @@ test = remodeling(confirmed)
 
 # this gives date value indexed with country
 
-plt.cla()
-test.loc[:, ['US_confirmed', 'CN_confirmed']].plot()
+# plt.cla()
+# CF.loc[:, :].plot(legend=None)
+# DT.loc[:, :].plot(legend=None)
+# CU.loc[:, :].plot(legend=None)
 
-
-"""
-MAPPING EXPERIMENTS
-"""
-
-# test2 = test1.loc[:, ['China_test1', 'US_test1', 'Italy_test1', 'Korea,South_test1']]
-
-shape_url = \
-    'https://www.naturalearthdata.com/' \
-    'http//www.naturalearthdata.com/download/10m/cultural/ne_10m_admin_0_countries_lakes.zip'
-
-local_path = 'temp/'
-print('Downloading shapefile...')
-r = requests.get(shape_url)
-z = zipfile.ZipFile(io.BytesIO(r.content))
-print("Done")
-z.extractall(path=local_path)  # extract to folder
-filenames = [y for y in sorted(z.namelist()) for ending in ['dbf', 'prj', 'shp', 'shx'] if y.endswith(ending)]
-print(filenames)
-
-dbf, prj, shp, shx = [filename for filename in filenames]
-baseMap = gpd.read_file(local_path + shp)
-print("Shape of the dataframe: {}".format(baseMap.shape))
-print("Projection of dataframe: {}".format(baseMap.crs))
-# baseMap.tail()
-
-ax = baseMap.plot()
-# ax.set_title("USA Counties. Default view)");
-
-"""
-OBSTACLES:
-arcpy is not available (need arcgis license and windows;
-and dbfpy is based on python2
-
-so.
-currently unable to combine my data to the attribute table
-"""
+# test.to_csv('temp/data/confirmed_20200420.csv')
