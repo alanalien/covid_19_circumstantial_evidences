@@ -17,7 +17,8 @@ import datetime as dt
 alt.renderers.enable('html')
 
 
-test2 = test1.loc[:, ['China_test1', 'US_test1', 'Italy_test1', 'Korea,South_test1']]
+
+# test2 = test1.loc[:, ['China_test1', 'US_test1', 'cItaly_test1', 'Korea,South_test1']]
 
 shape_url = \
     'https://www.naturalearthdata.com/' \

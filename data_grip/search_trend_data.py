@@ -36,3 +36,5 @@ test.columns = ['US_search', 'CN_search']
 
 plt.cla()
 test.loc[:, ['US_search', 'CN_search']].plot()
+
+# test.to_csv('temp/data/searchTrend_20200420.csv')

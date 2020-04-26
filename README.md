@@ -1,5 +1,5 @@
 # COVID-19 Related Circumstantial Evidence Data Visualization #
-_This is a school project for advanced project in data visualization at Pratt Institute._
+This is a school project for advanced project in data visualization at Pratt Institute._
 
 While there are hundreds of covid-19 data visualization dashboards around, there're not many of them focusing on showing circumstantial evidence data. These data include but not limited to box office, keywords searching trend, related website click ratio and so on. This project focuses on such circumstantial evidence and trying to find a way to visualize them.
 

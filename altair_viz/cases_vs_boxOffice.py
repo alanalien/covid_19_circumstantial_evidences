@@ -72,7 +72,7 @@ Covid = easy_merge(Covid, BoxOffice2)
 
 
 """
-altair viz
+altair viz: covid vs BoxOffice
 """
 
 # source = Covid.loc[Covid['Country'] == 'KR']
@@ -100,6 +100,8 @@ chart = alt.Chart(source).mark_circle(size=60).encode(
 chart.save('temp/viz/test4.html')
 
 
-"""
+""" 
+TO BE UPDATE
 add population to compare
+use sq rt to revalue the data, in order to make the viz more visible
 """

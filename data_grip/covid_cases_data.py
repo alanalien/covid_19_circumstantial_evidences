@@ -1,25 +1,6 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
-# below are for mapping purpose
-import geopandas as gpd
-import shapefile
-import dbfpy
-# arcpy might be better if have access
-# https://gis.stackexchange.com/questions/44692/accessing-attribute-table-within-shapefile-and-replace-values
-import zipfile
-import requests
-import io
-
-
-# path = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/"
-# file1 = "time_series_covid19_confirmed_global.csv"
-# file2 = "time_series_covid19_deaths_global.csv"
-# file3 = "time_series_covid19_recovered_global.csv"
-#
-# confirmed = pd.read_csv(path + file1)
-# death = pd.read_csv(path + file2)
-# recovered = pd.read_csv(path + file3)
 
 
 def date_formatting(df):  # rename columns by date
@@ -111,6 +92,7 @@ def country_code_update(df):
 #     return df_name
 # So add new argus 'df_name' here to replace
 
+
 def remodeling(df, df_name):  # transposing, column renaming, and date format converting
     # df_name = get_df_name(df)
     new_df = country_code_update(df)
@@ -122,20 +104,15 @@ def remodeling(df, df_name):  # transposing, column renaming, and date format co
     return new_df
 
 
+# TEST:
+# driving codes
+
+
 # CF = remodeling(confirmed, 'confirmed')
 # DT = remodeling(death, 'death')
 # CU = remodeling(recovered, 'CU')
-
-# print(test.dtypes)
-
-# for col in test.columns:
-#     print(col)
-
-# this gives date value indexed with country
 
 # plt.cla()
 # CF.loc[:, :].plot(legend=None)
 # DT.loc[:, :].plot(legend=None)
 # CU.loc[:, :].plot(legend=None)
-
-# test.to_csv('temp/data/confirmed_20200420.csv')
