@@ -3,7 +3,11 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
-def date_formatting(df):  # rename columns by date
+def date_formatting(df):
+    """
+    turn dates in column names
+    to yyyy-mm-dd format
+    """
     from datetime import datetime
     sub_df = df.iloc[:, 1:]
     for i in range(0, len(sub_df.columns)):
@@ -18,6 +22,11 @@ def date_formatting(df):  # rename columns by date
 
 
 def country_grouping(df):  # group values by country
+    """
+    group data by country to
+    absorb some data abnormally
+    and make all data on the same geo level
+    """
     country_group = date_formatting(df)
     country_group.fillna(value=0, inplace=True)
     country_group = country_group.groupby(['Country/Region'])[country_group.columns[3:]].sum().reset_index()
@@ -25,8 +34,9 @@ def country_grouping(df):  # group values by country
 
 
 def country_code_update(df):
-    """NOTES"""
     """
+    change the country names to ISO alpha_2 country code
+
     # all cruise ship cases have been removed
     # West Bank and Gaza region is considered as part of Palestine (PS)
     # Taiwan is considered separately from China here, for it has potentially different data collection procedure.
@@ -93,7 +103,15 @@ def country_code_update(df):
 # So add new argus 'df_name' here to replace
 
 
-def remodeling(df, df_name):  # transposing, column renaming, and date format converting
+def remodeling(df, df_name):
+    """
+    transposing, column renaming,
+    and date format converting
+    :return: 2 dimension covid data
+        - variables: country
+        - observations: counts, by day
+        - table: confirmed/death/recovered, depending on input df
+    """
     # df_name = get_df_name(df)
     new_df = country_code_update(df)
     new_df.rename(columns={'country_code': 'Date'}, inplace=True)
@@ -105,14 +123,58 @@ def remodeling(df, df_name):  # transposing, column renaming, and date format co
 
 
 # TEST:
-# driving codes
 
 
-# CF = remodeling(confirmed, 'confirmed')
-# DT = remodeling(death, 'death')
-# CU = remodeling(recovered, 'CU')
+# driver codes:
+
+path = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/"
+file1 = "time_series_covid19_confirmed_global.csv"
+file2 = "time_series_covid19_deaths_global.csv"
+file3 = "time_series_covid19_recovered_global.csv"
+
+confirmed = pd.read_csv(path + file1)
+death = pd.read_csv(path + file2)
+recovered = pd.read_csv(path + file3)
+
+CF = remodeling(confirmed, 'confirmed')
+DT = remodeling(death, 'death')
+CU = remodeling(recovered, 'CU')
 
 # plt.cla()
 # CF.loc[:, :].plot(legend=None)
 # DT.loc[:, :].plot(legend=None)
 # CU.loc[:, :].plot(legend=None)
+
+
+# Get Country List
+"""
+get countries
+"""
+
+country_table_path2 = 'data/country_codes.csv'
+countries = pd.read_csv(country_table_path2)  # country table: names / alpha_2 codes
+
+country_table = pd.DataFrame(columns=['Code'])
+country_affected = []
+for i in CF.columns:
+    country_affected.append(i[:2])
+
+country_table['Code'] = country_table['Code'].append(pd.Series(country_affected), ignore_index=True)
+country_table = pd.merge(country_table, countries, how='left', left_on='Code', right_on='Code')
+
+# country_table[country_table['Name'].isnull() == True]
+# #     Code Name
+# # 90    XK  NaN
+# # 116   NA  NaN
+
+# XK = Kosovo, NA = Namibia
+# Manually insert
+country_table.loc[country_table['Code'] == 'XK', 'Name'] = 'Kosovo'
+country_table.loc[country_table['Code'] == 'NA', 'Name'] = 'Namibia'
+
+country_table.to_csv('data/country_table.csv')
+"""
+country_table might need update
+when new countries have new coronavirus cases
+"""
+

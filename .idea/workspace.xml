@@ -1,0 +1,663 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/data_get/search_trend_data.py" description="    df = pytrend.interest_over_time()&#10;" line="17" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e3d6cf87-0530-4e85-9708-f7adb33f7932" name="Default Changelist" comment="rename and finalize" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_get/covid_cases_data_clean.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_get/box_office_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="284">
+              <caret line="186" lean-forward="true" selection-start-line="186" selection-end-line="186" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+                <element signature="e#1098#2408#0" />
+                <element signature="e#2453#3489#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data_post/git_commit.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_get/click_ratio_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="77">
+              <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+              <folding>
+                <element signature="e#0#19#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>jh_df</find>
+      <find>pd</find>
+      <find>p</find>
+      <find>body</find>
+      <find>country_code</find>
+      <find>for i</find>
+      <find>j</find>
+      <find>dump</find>
+      <find>r</find>
+      <find>loc</find>
+      <find>te</find>
+      <find />
+      <find>dtype</find>
+      <find>appe</find>
+      <find>su</find>
+      <find>delta</find>
+      <find>join</find>
+      <find>print</find>
+      <find>list</find>
+      <find>insert</find>
+      <find>new_</find>
+      <find>new_counts =</find>
+      <find>new_counts</find>
+      <find>Confirmed2</find>
+      <find>chart</find>
+    </findStrings>
+    <replaceStrings>
+      <replace />
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="wildgoose &lt;wildgoose@gmail.com&gt;" />
+      </list>
+    </option>
+    <option name="UPDATE_TYPE" value="MERGE" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="a9e1cb0e-df84-4fe7-b81c-4e752a0aefd0" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/boxOfficeScraper.py" />
+        <option value="$PROJECT_DIR$/plotTest.py" />
+        <option value="$PROJECT_DIR$/dataRetriever.py" />
+        <option value="$PROJECT_DIR$/search_trend_data.py" />
+        <option value="$PROJECT_DIR$/box_office_data.py" />
+        <option value="$PROJECT_DIR$/click_ratio_data_v2.py" />
+        <option value="$PROJECT_DIR$/click_ratio_data.py" />
+        <option value="$PROJECT_DIR$/data_grip/click_ratio_data_v2.py" />
+        <option value="$PROJECT_DIR$/data_grip/click_ratio_data_updater.py" />
+        <option value="$PROJECT_DIR$/data_grip/click_ratio_data.py" />
+        <option value="$PROJECT_DIR$/data_grip/box_office_data.py" />
+        <option value="$PROJECT_DIR$/altair_viz/cases_map.py" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/data_grip/get_countries.py" />
+        <option value="$PROJECT_DIR$/data_grip/covid_cases_data.py" />
+        <option value="$PROJECT_DIR$/altair_viz/cases_vs_boxOffice.py" />
+        <option value="$PROJECT_DIR$/altair_viz/table_merge_stack.py" />
+        <option value="$PROJECT_DIR$/data_grip/search_trend_data.py" />
+        <option value="$PROJECT_DIR$/altair_viz/cases_vs_searchTrend.py" />
+        <option value="$PROJECT_DIR$/altair_viz/cases_by_day1.py" />
+        <option value="$PROJECT_DIR$/data_get/click_ratio_data.py" />
+        <option value="$PROJECT_DIR$/data_get/box_office_data.py" />
+        <option value="$PROJECT_DIR$/data_post/git_commit.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectConfigurationFiles">
+    <option name="files">
+      <list>
+        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" fullScreen="true">
+    <option name="x" value="1680" />
+    <option name="width" value="1920" />
+    <option name="height" value="1080" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="covid_19_circumstantial_evidences" type="b2602c69:ProjectViewProjectNode" />
+              <item name="covid_19_CE" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="covid_19_circumstantial_evidences" type="b2602c69:ProjectViewProjectNode" />
+              <item name="covid_19_CE" type="462c0819:PsiDirectoryNode" />
+              <item name="altair_viz" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="covid_19_circumstantial_evidences" type="b2602c69:ProjectViewProjectNode" />
+              <item name="covid_19_CE" type="462c0819:PsiDirectoryNode" />
+              <item name="data_get" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="covid_19_circumstantial_evidences" type="b2602c69:ProjectViewProjectNode" />
+              <item name="covid_19_CE" type="462c0819:PsiDirectoryNode" />
+              <item name="temp" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="covid_19_circumstantial_evidences" type="b2602c69:ProjectViewProjectNode" />
+              <item name="covid_19_CE" type="462c0819:PsiDirectoryNode" />
+              <item name="temp" type="462c0819:PsiDirectoryNode" />
+              <item name="viz" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/temp/data" />
+      <recent name="$PROJECT_DIR$/temp/viz/countries" />
+      <recent name="$PROJECT_DIR$/data_grip" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.covid_cases_data">
+    <configuration name="boxOfficeScraper" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="covid_19_CE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/boxOfficeScraper.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="click_ratio_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="covid_19_CE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_grip/click_ratio_data.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="covid_cases_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="covid_19_CE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_grip/covid_cases_data_clean.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="dataRetriever" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="covid_19_CE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataRetriever.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="plotTest" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="covid_19_CE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plotTest.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.covid_cases_data" />
+        <item itemvalue="Python.click_ratio_data" />
+        <item itemvalue="Python.plotTest" />
+        <item itemvalue="Python.dataRetriever" />
+        <item itemvalue="Python.boxOfficeScraper" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e3d6cf87-0530-4e85-9708-f7adb33f7932" name="Default Changelist" comment="" />
+      <created>1585881184131</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1585881184131</updated>
+    </task>
+    <task id="LOCAL-00001" summary="add base map data&#10;data source: Natural Earth">
+      <created>1587716365907</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587716365907</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add Alair pilot-visualization codes results">
+      <created>1587754426262</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587754426262</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add Alair pilot-visualization codes results">
+      <created>1587866935981</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1587866935981</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add altair pilot plots">
+      <created>1587867073915</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1587867073915</updated>
+    </task>
+    <task id="LOCAL-00005" summary="add altair pilot plots">
+      <created>1588562375740</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1588562375740</updated>
+    </task>
+    <task id="LOCAL-00006" summary="rename and finalize">
+      <created>1588566809025</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1588566809025</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1680" y="0" width="1920" height="1080" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11005793" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info active="true" anchor="bottom" id="GitHub Pull Requests" order="0" sideWeight="0.4997367" weight="0.32970297" />
+      <window_info anchor="bottom" id="Message" order="1" />
+      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49921012" weight="0.32970297" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49921012" weight="0.3138614" />
+      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.4997367" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="7" weight="0.32959184" />
+      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49815693" weight="0.32970297" />
+      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.49078462" weight="0.32772276" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.1858873" side_tool="true" visible="true" weight="0.509901" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="11" sideWeight="0.81411266" visible="true" weight="0.509901" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+    </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="remove unnecessary test lines and comments" />
+    <MESSAGE value="add base map data&#10;data source: Natural Earth" />
+    <MESSAGE value="add Alair pilot-visualization codes results" />
+    <MESSAGE value="add altair pilot plots" />
+    <MESSAGE value="rename and finalize" />
+    <option name="LAST_COMMIT_MESSAGE" value="rename and finalize" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="setValue">
+      <expression>
+        <expression-string>&lt;function sunday_df at 0x11f88f0e0&gt;</expression-string>
+        <language-id>Python</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/boxOfficeScraper.py" />
+    <entry file="file://$PROJECT_DIR$/plot_test" />
+    <entry file="file://$PROJECT_DIR$/plotTest.py" />
+    <entry file="file://$PROJECT_DIR$/dataRetriever.py" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/covid19/lib/python3.7/xml/etree/ElementTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="586" selection-start-line="586" selection-end-line="586" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/click_ratio_data_v2.py" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/covid19/lib/python3.7/site-packages/dbfpy/dbf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="710">
+          <caret line="279" selection-start-line="279" selection-end-line="279" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/datetime.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/pydevconsole.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-416">
+          <caret line="326" selection-start-line="326" selection-end-line="326" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_grip/click_ratio_data_updater.py" />
+    <entry file="file://$PROJECT_DIR$/data/confirmed_20200420.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/boxOffice_20200420.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" column="114" lean-forward="true" selection-start-line="17" selection-start-column="114" selection-end-line="17" selection-end-column="114" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/viz/test.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/viz/test2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108465" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/altair_viz/cases_map.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="22" column="13" lean-forward="true" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_bundle/pydev_import_hook.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="23">
+            <caret line="1" selection-start-line="1" selection-end-line="1" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/viz/test3.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_grip/get_countries.py" />
+    <entry file="file://$USER_HOME$/anaconda3/envs/covid19/lib/python3.7/site-packages/pandas/core/internals/managers.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="584">
+          <caret line="205" lean-forward="true" selection-end-line="2027" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/searchTrend_20200420.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="142">
+          <caret line="21" column="15" selection-start-line="21" selection-start-column="15" selection-end-line="21" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/country_codes.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-97" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/altair_viz/cases_vs_boxOffice.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2139">
+          <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1588562597948" expanded="true" signature="1011:1064" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_get/search_trend_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/altair_viz/cases_vs_searchTrend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1863">
+          <caret line="81" column="36" lean-forward="true" selection-start-line="81" selection-start-column="36" selection-end-line="81" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/altair_viz/table_merge_stack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="29" column="27" lean-forward="true" selection-start-line="29" selection-start-column="27" selection-end-line="29" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/altair_viz/cases_by_day1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="50" lean-forward="true" selection-start-line="18" selection-start-column="50" selection-end-line="18" selection-end-column="50" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_get/covid_cases_data_clean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="10" column="21" lean-forward="true" selection-start-line="10" selection-start-column="21" selection-end-line="10" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_get/click_ratio_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_get/box_office_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="186" lean-forward="true" selection-start-line="186" selection-end-line="186" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <element signature="e#1098#2408#0" />
+            <element signature="e#2453#3489#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/covid19/lib/python3.7/subprocess.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="511" selection-start-line="511" selection-end-line="511" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_post/git_commit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

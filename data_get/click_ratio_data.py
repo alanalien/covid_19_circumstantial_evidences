@@ -56,7 +56,7 @@ for data in root2:
 
 click_ratio_table = pd.DataFrame(click_ratio_table)
 
-plt.cla()
-plt.plot(click_ratio_table.loc[:, 'Date'], click_ratio_table.loc[:, 'Page_View_Per_Million'])
-plt.title('JHU Page_View_Per_Million')
-# click_ratio_table.shape()
+# plt.cla()
+# plt.plot(click_ratio_table.loc[:, 'Date'], click_ratio_table.loc[:, 'Page_View_Per_Million'])
+# plt.title('JHU Page_View_Per_Million')
+# # click_ratio_table.shape()

@@ -1,6 +1,6 @@
 import pandas as pd
 import numpy as np
-from data_grip import covid_cases_data as ccd
+from data_get import covid_cases_data_clean as ccd
 import matplotlib.pyplot as plt
 import altair as alt
 import datetime as dt

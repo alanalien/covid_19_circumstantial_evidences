@@ -16,25 +16,45 @@ import matplotlib.pyplot as plt
 URL PARAMETER SCRAPER
 """
 
-main_url = 'https://www.boxofficemojo.com/intl/?ref_=bo_nb_wew_tab'
-main_page = requests.get(main_url)
-main_soup = BeautifulSoup(main_page.content, 'html.parser')
+
+def mojo_country_codes():
+    main_url = 'https://www.boxofficemojo.com/intl/?ref_=bo_nb_wew_tab'
+    main_page = requests.get(main_url)
+    main_soup = BeautifulSoup(main_page.content, 'html.parser')
+
+    country_list = []
+    code_list = []
+
+    for select in main_soup.find_all('select')[0:]:
+        option = select.find_all('option')
+        for i in option:
+            # print(i['value'], i.text)
+            match = re.findall('(?<==).*$', i['value'])  # (?<=\=) positively look for characters behind '\='
+            code = ''.join(match)
+            name = i.text
+            country_list.append(name)
+            code_list.append(code)
+
+    mojo_countries = pd.DataFrame({'country_name': country_list, 'country_code': code_list})
+    mojo_countries.drop(mojo_countries[mojo_countries['country_code'] == 'FOREIGN'].index, inplace=True)
+    return mojo_countries
 
 
-country_list = []
-code_list = []
-for select in main_soup.find_all('select')[0:]:
-    option = select.find_all('option')
-    for i in option:
-        # print(i['value'], i.text)
-        match = re.findall('(?<==).*$', i['value'])  # (?<=\=) positively look for characters behind '\='
-        code = ''.join(match)
-        name = i.text
-        country_list.append(name)
-        code_list.append(code)
+mojo_countries = mojo_country_codes()
+for index, rows in mojo_countries.iterrows():
+    if len(rows['country_code']) > 2:
+        print(rows['country_name'], rows['country_code'])
 
-mojo_countries = pd.DataFrame({'country_name': country_list, 'country_code': code_list})
-mojo_countries.drop(mojo_countries[mojo_countries['country_code'] == 'FOREIGN'].index, inplace=True)
+# Central America XC4
+# East Africa XKN
+# International FOREIGN -- removed
+# Russia/CIS XR2
+# Serbia and Montenegro XS2
+# Switzerland (French) XS3
+# Switzerland (German) XS1
+
+# US
+
 
 """
 PAGE SCRAPER
@@ -136,36 +156,42 @@ def sunday_df():
     return df  # a data frame with only one column of dates is returned
 
 
-# call sunday_df to create an empty data frame
-box_office_df = sunday_df()
-box_office_df = box_office_df.set_index(box_office_df['date'])
+def get_all_box_office_df():
+    # call sunday_df() to create an empty data frame
+    box_office_df = sunday_df()
+    box_office_df = box_office_df.set_index(box_office_df['date'])
+    # call mojo_country_codes() to get mojo's country list
+    mojo_countries = mojo_country_codes()
+    # test = ['IT', 'AL', 'VN']
+    # for idx, my_codes in enumerate(test):
+    for idx, my_codes in enumerate(mojo_countries.loc[:, 'country_code']):
+        # scrape each country's box office data
+        box_office_data = box_office_cleaner(my_codes)
 
-# test = ['IT', 'AL', 'VN']
-# for idx, my_codes in enumerate(test):
-for idx, my_codes in enumerate(mojo_countries.loc[:, 'country_code']):
-    # scrape each country's box office data
-    box_office_data = box_office_cleaner(my_codes)
+        # clean box office data, make $449,007 format to int
+        box_office_data_list = box_office_data.iloc[:, 0].tolist()
+        box_office_num_list = []
+        for usd in box_office_data_list:
+            usd = usd[1:]
+            usd = usd.replace(',', '')
+            usd = int(usd)
+            # print(usd)
+            box_office_num_list.append(usd)
+        box_office_data.insert(0, '_'.join([my_codes, 'boxOffice_usd']), box_office_num_list, True)
+        box_office_df[my_codes + '_boxOffice_usd'] = box_office_data.iloc[:, [0]]
 
-    # clean box office data, make $449,007 format to int
-    box_office_data_list = box_office_data.iloc[:, 0].tolist()
-    box_office_num_list = []
-    for usd in box_office_data_list:
-        usd = usd[1:]
-        usd = usd.replace(',', '')
-        usd = int(usd)
-        # print(usd)
-        box_office_num_list.append(usd)
-    box_office_data.insert(0, '_'.join([my_codes, 'boxOffice_usd']), box_office_num_list, True)
-    box_office_df[my_codes + '_boxOffice_usd'] = box_office_data.iloc[:, [0]]
+        print('done', my_codes, '------', idx, '/ 92')
+        time.sleep(3)
+    return box_office_df
 
-    print('done', my_codes, '------', idx, '/ 92')
-    time.sleep(3)
+
+box_office = get_all_box_office_df()
 
 
 plt.cla()
-box_office_df.loc[:, :].plot(legend=None)
+box_office.loc[:, :].plot(legend=None)
 
-box_office_df.to_csv('temp/data/boxOffice_20200420.csv')
+box_office.to_csv('temp/data/boxOffice_20200420.csv')
 
 """
 TO BE UPDATE:
@@ -175,18 +201,3 @@ rename russia/cis;
 drop 'CN' (China) and use alter data source;
 add 'US'
 """
-
-for index, rows in mojo_countries.iterrows():
-    if len(rows['country_code']) > 2:
-        print(rows['country_name'], rows['country_code'])
-
-# Central America XC4
-# East Africa XKN
-# International FOREIGN -- removed
-# Russia/CIS XR2
-# Serbia and Montenegro XS2
-# Switzerland (French) XS3
-# Switzerland (German) XS1
-
-# US
-
