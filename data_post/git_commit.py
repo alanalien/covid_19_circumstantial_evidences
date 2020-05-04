@@ -12,6 +12,7 @@ if response.startswith('n'):
 cp = cmd.run(f"git commit -m '{message}'", check=True, shell=True)
 cp = cmd.run("git push -u origin master -f", check=True, shell=True)
 
-
+# https://steadylearner.com/blog/read/How-to-automatically-commit-files-to-GitHub-with-Python
+# https://github.com/steadylearner/Python-Blog
 
 
