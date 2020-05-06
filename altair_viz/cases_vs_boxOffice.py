@@ -1,9 +1,7 @@
 import pandas as pd
-import numpy as np
-from data_get import covid_cases_data_clean as ccd
-import matplotlib.pyplot as plt
+from data_clean_funs import covid_cases_data_clean as ccd
 import altair as alt
-import datetime as dt
+
 alt.renderers.enable('html')
 
 path = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/"

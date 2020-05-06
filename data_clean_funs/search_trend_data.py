@@ -69,4 +69,4 @@ def merge_trend_data():
 search_trend_data = merge_trend_data()
 print(search_trend_data)
 
-search_trend_data.to_csv('data/search_trends.csv')
+search_trend_data.to_csv('data/search_trends_20200424.csv')

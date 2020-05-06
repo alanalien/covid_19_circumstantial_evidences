@@ -1,10 +1,6 @@
 import pandas as pd
-import numpy as np
-from data_get import covid_cases_data_clean as ccd
-import matplotlib.pyplot as plt
+from data_clean_funs import covid_cases_data_clean as ccd, table_merge_stack as tms
 import altair as alt
-import datetime as dt
-from altair_viz import table_merge_stack as tms
 
 alt.renderers.enable('html')
 
@@ -21,7 +17,7 @@ Confirmed = ccd.remodeling(df=confirmed, df_name='confirmed')
 Death = ccd.remodeling(df=death, df_name='death')
 Recovered = ccd.remodeling(df=recovered, df_name='recovered')
 
-search_trend = pd.read_csv('data/search_trends.csv')
+search_trend = pd.read_csv('data/search_trends_20200424.csv')
 search_trend['date'] = pd.to_datetime(search_trend['date'])
 search_trend = search_trend.set_index('date')
 
