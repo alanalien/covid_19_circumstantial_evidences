@@ -5,9 +5,10 @@ import matplotlib.pyplot as plt
 
 # this function returns google trend of "coronavirus" in the past 3 month within a given country
 def get_google_trends(country_code):
-    """ TO UPDATE:
-    need an if clause to exclude Chinese search, to use Baidu data instead;
-    need to output file and append results daily;
+    """
+    get selected country's google trend data
+    :param country_code: ISO alpha_2
+    :return: google trend data frame
     """
     from pytrends.request import TrendReq
     pytrend = TrendReq()
@@ -22,6 +23,12 @@ def get_google_trends(country_code):
 
 
 def trend_data_clean(country_code):
+    """
+    clean the google trend data frame to meet requirement
+    only date and trend index will remain
+    :param country_code:
+    :return: a data frame with 2 columns: date, search trend index
+    """
     df = get_google_trends(country_code)
     df2 = df.iloc[:, 0:1]
     df2.columns = ['_'.join([country_code, 'search'])]  # add country_code prefix to column name
@@ -69,4 +76,4 @@ def merge_trend_data():
 search_trend_data = merge_trend_data()
 print(search_trend_data)
 
-search_trend_data.to_csv('data/search_trends_20200424.csv')
+search_trend_data.to_csv('data/search_trends_20200503.csv')

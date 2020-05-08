@@ -1,6 +1,8 @@
 import pandas as pd
 import numpy as np
 
+Confirmed = pd.read_csv('data/confirmed.csv')
+
 
 def new_index_for_viz(df):
     df.index.name = 'Date'

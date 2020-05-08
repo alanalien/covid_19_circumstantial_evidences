@@ -6,11 +6,6 @@ from datetime import datetime
 from datetime import timedelta
 import re
 import time
-import matplotlib.pyplot as plt
-
-######
-# Country Code Scraper #####
-######
 
 """
 URL PARAMETER SCRAPER
@@ -18,6 +13,10 @@ URL PARAMETER SCRAPER
 
 
 def mojo_country_codes():
+    """
+    get country codes that being used on mojo
+    :return: df of mojo country codes
+    """
     main_url = 'https://www.boxofficemojo.com/intl/?ref_=bo_nb_wew_tab'
     main_page = requests.get(main_url)
     main_soup = BeautifulSoup(main_page.content, 'html.parser')
@@ -40,32 +39,24 @@ def mojo_country_codes():
     return mojo_countries
 
 
-mojo_countries = mojo_country_codes()
-for index, rows in mojo_countries.iterrows():
-    if len(rows['country_code']) > 2:
-        print(rows['country_name'], rows['country_code'])
-
-# Central America XC4
-# East Africa XKN
-# International FOREIGN -- removed
-# Russia/CIS XR2
-# Serbia and Montenegro XS2
-# Switzerland (French) XS3
-# Switzerland (German) XS1
-
-# US
-
-
 """
 PAGE SCRAPER
 """
 
 
-def box_office_scraper(country_code):
+def box_office_scraper(country_code, year=2020):
+    """
+    scrape box office data of defined country and year
+    :param country_code: country to scrap, in mojo country code (mostly in ISO alpha 2)
+    :param year: year to scrap, default 2020
+    :return: df of box office data
+    """
     # url prams...
-    url = "https://www.boxofficemojo.com/weekend/by-year/2020/?area="
+    year = str(year)
+    main = "https://www.boxofficemojo.com/weekend/by-year/"
     country_code = country_code  # argument: country code
-    page = requests.get(url + country_code)
+    url = main + year + '/?area=' + country_code
+    page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
     # create an empty data frame to hold country code info
     column_names = ["date",
@@ -98,8 +89,13 @@ def box_office_scraper(country_code):
     return box_office_table
 
 
-def box_office_cleaner(country_code):
-    box_office_table = box_office_scraper(country_code)  # call former function to scrape box office data
+def box_office_cleaner(country_code, year=2020):
+    """
+    clean the mojo box office data tables for further usage
+    :param country_code: country to scrap, in mojo country code (mostly in ISO alpha 2)
+    :return: df of only date and box office total gross
+    """
+    box_office_table = box_office_scraper(country_code=country_code, year=year)  # call former function to scrape box office data
     box_office_table = box_office_table.iloc[:, [0, 3, 7]]  # select only useful columns
 
     # append formatted date column
@@ -119,9 +115,51 @@ def box_office_cleaner(country_code):
     box_office_table.columns = ['date', country_code]
     box_office_table = box_office_table.set_index(box_office_table['date'])
     box_office_table = pd.DataFrame(box_office_table)
-    box_office_table = box_office_table.iloc[:,[1]]
+    box_office_table = box_office_table.iloc[:, [1]]
     box_office_table = box_office_table.add_suffix('_boxOffice_total')
     return box_office_table
+
+
+# create empty data frame with sundays as index
+def last_sunday(today):
+    today = datetime.date(today)
+    # if today is sunday return today
+    if today.weekday() == 6:  # 6 means sunday
+        sunday = today
+    # otherwise get last sunday
+    else:
+        # see https://stackoverflow.com/questions/18200530/get-the-last-sunday-and-saturdays-date-in-python
+        d = today.toordinal()
+        sunday = d - (d % 7)
+        sunday = datetime.date(datetime.fromordinal(sunday))
+    return sunday
+
+
+def sunday_df(year=2020):
+    """
+    get a data frame of all (past) sundays of the input year
+    :param year: default 2020
+    :return: df of all (past) sundays
+    """
+    year = int(year)
+    sundays = []
+    # get an input today if the year is 2020
+    if year == 2020:
+        today = datetime.now()
+    # else get the last day of the designate year
+    else:
+        today = datetime.strptime((str(year)+"-12-31"), '%Y-%m-%d')
+    # get last sunday result using to input today
+    last_sunday_result = last_sunday(today)
+    week_num = int((int(today.strftime('%j')) / 7)-1)  # %j represent the day of the year
+    w = -1
+    while w <= week_num:
+        sundays.append(last_sunday_result - timedelta(w*7))
+        w = w+1
+        # print(w)
+    df = pd.DataFrame(sundays, columns=['date'])
+    df = df.drop(0).reset_index(drop=True)
+    return df
 
 
 """
@@ -132,41 +170,16 @@ listed on the mojo box office website
 """
 
 
-# create empty data frame with sundays as index
-def last_sunday(today):
-    today = datetime.date(today)
-    d = today.toordinal()
-    last = d - 6
-    sundays = last - (last % 7)
-    sunday = datetime.date(datetime.fromordinal(sundays))
-    return sunday
-
-
-def sunday_df():
-    sundays = []
-    today = datetime.now()
-    last_sunday_result = last_sunday(today)
-    week_num = int(int(today.strftime('%j')) / 7)  # %j represent the day of the year
-    w = -1
-    while w <= (week_num-1):
-        sundays.append(last_sunday_result - timedelta(w*7))
-        w = w+1
-        # print(w)
-    df = pd.DataFrame(sundays, columns=['date'])
-    return df  # a data frame with only one column of dates is returned
-
-
-def get_all_box_office_df():
+def get_all_box_office_df(year=2020):
     # call sunday_df() to create an empty data frame
     box_office_df = sunday_df()
     box_office_df = box_office_df.set_index(box_office_df['date'])
     # call mojo_country_codes() to get mojo's country list
-    mojo_countries = mojo_country_codes()
-    # test = ['IT', 'AL', 'VN']
-    # for idx, my_codes in enumerate(test):
-    for idx, my_codes in enumerate(mojo_countries.loc[:, 'country_code']):
+    country_list = mojo_country_codes()
+    # loop through all country codes and scrape box office data
+    for idx, my_codes in enumerate(country_list.loc[:, 'country_code']):
         # scrape each country's box office data
-        box_office_data = box_office_cleaner(my_codes)
+        box_office_data = box_office_cleaner(my_codes, year=year)
 
         # clean box office data, make $449,007 format to int
         box_office_data_list = box_office_data.iloc[:, 0].tolist()
@@ -176,28 +189,18 @@ def get_all_box_office_df():
             usd = usd.replace(',', '')
             usd = int(usd)
             # print(usd)
+            # append each int (box office total gross) to an empty list
             box_office_num_list.append(usd)
+        # create a new column for the looping country
+        # and insert the list of box office gross in
         box_office_data.insert(0, '_'.join([my_codes, 'boxOffice_usd']), box_office_num_list, True)
+        # add the new column to the box office data frame
         box_office_df[my_codes + '_boxOffice_usd'] = box_office_data.iloc[:, [0]]
 
         print('done', my_codes, '------', idx, '/ 92')
         time.sleep(3)
+    # remove the redundant date index
+    box_office_df = box_office_df.reset_index(drop=True)
     return box_office_df
 
 
-box_office = get_all_box_office_df()
-
-
-plt.cla()
-box_office.loc[:, :].plot(legend=None)
-
-box_office.to_csv('temp/data/boxOffice_20200420.csv')
-
-"""
-TO BE UPDATE:
-drop 'central america', 'east africa' and 'international' rows; -- done
-sum 2 switzerland rows;
-rename russia/cis;
-drop 'CN' (China) and use alter data source;
-add 'US'
-"""
