@@ -59,7 +59,7 @@ def box_office_scraper(country_code, year=2020):
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
     # create an empty data frame to hold country code info
-    column_names = ["date",
+    column_names = ["Date",
                     "top_10_gross",
                     "top_10_last_week_compare",
                     "overall_gross",
@@ -86,37 +86,6 @@ def box_office_scraper(country_code, year=2020):
             pd.Series(td_list, index=box_office_table.columns),
             ignore_index=True
         )
-    return box_office_table
-
-
-def box_office_cleaner(country_code, year=2020):
-    """
-    clean the mojo box office data tables for further usage
-    :param country_code: country to scrap, in mojo country code (mostly in ISO alpha 2)
-    :return: df of only date and box office total gross
-    """
-    box_office_table = box_office_scraper(country_code=country_code, year=year)  # call former function to scrape box office data
-    box_office_table = box_office_table.iloc[:, [0, 3, 7]]  # select only useful columns
-
-    # append formatted date column
-    week_list = box_office_table.iloc[:, 2]  # get week number
-
-    date_list = []
-    for week_num in week_list:
-        first_sunday = datetime.strptime('2020-01-05', '%Y-%m-%d')
-        day_diff = (int(week_num)-1)*7
-        new_date = first_sunday + timedelta(days=day_diff)
-        new_date = datetime.date(new_date)
-        date_list.append(new_date)
-
-    box_office_table.insert(0, 'new_date', date_list, True)
-
-    box_office_table = box_office_table.iloc[:, [0, 2]]
-    box_office_table.columns = ['date', country_code]
-    box_office_table = box_office_table.set_index(box_office_table['date'])
-    box_office_table = pd.DataFrame(box_office_table)
-    box_office_table = box_office_table.iloc[:, [1]]
-    box_office_table = box_office_table.add_suffix('_boxOffice_total')
     return box_office_table
 
 
@@ -162,6 +131,33 @@ def sunday_df(year=2020):
     return df
 
 
+def box_office_cleaner(country_code, year=2020):
+    """
+    clean the mojo box office data tables for further usage
+    :param country_code: country to scrap, in mojo country code (mostly in ISO alpha 2)
+    :return: df of only date and box office total gross
+    """
+    year = int(year)
+    box_office_table = box_office_scraper(country_code=country_code, year=year)  # call former function to scrape box office data
+    box_office_table = box_office_table.iloc[:, [0, 3, 7]]  # select only useful columns
+
+    dates = sunday_df(year).reset_index()
+    # the following line modifies the new index column by
+    # 1. +1 to each number
+    # 2. reverse the Series by [::-1]
+    dates['week'] = (dates['index'] + 1)[::-1].reset_index(drop=True)
+    box_office_table['week'] = pd.to_numeric(box_office_table['week'])
+    box_office_table = pd.merge(box_office_table, dates, left_on='week', right_on='week')
+
+    box_office_table = box_office_table.iloc[:, [4, 1]]
+    box_office_table.columns = ['date', country_code]
+    box_office_table = box_office_table.set_index(box_office_table['date'])
+    box_office_table = pd.DataFrame(box_office_table)
+    box_office_table = box_office_table.iloc[:, [1]]
+    box_office_table = box_office_table.add_suffix('_boxOffice_total')
+    return box_office_table
+
+
 """
 BREAK
 the following is an iteration that uses functions above,
@@ -172,7 +168,7 @@ listed on the mojo box office website
 
 def get_all_box_office_df(year=2020):
     # call sunday_df() to create an empty data frame
-    box_office_df = sunday_df()
+    box_office_df = sunday_df(year)
     box_office_df = box_office_df.set_index(box_office_df['date'])
     # call mojo_country_codes() to get mojo's country list
     country_list = mojo_country_codes()

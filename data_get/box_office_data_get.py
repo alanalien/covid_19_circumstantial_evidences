@@ -41,9 +41,10 @@ for i in to_drop:
     # print(c)
     box_office_full = box_office_full.drop([c], axis=1)
 
-box_office_full.to_csv('data/box_office_full', index=False)
+box_office_full.to_csv('data/box_office_full.csv', index=False)
 
 # # test
+# import matplotlib.pyplot as plt
 # plt.cla()
 # for i in box_office_full.iloc[:, 1:]:
 #     plt.plot(box_office_full.iloc[:, 0], box_office_full.loc[:, i])

@@ -13,11 +13,11 @@ def new_index_for_viz(df):
 
 def transpose_for_altair(df, df_name):
     df = new_index_for_viz(df)
-    colNum = len(df.columns)
-    rowNum = len(df)
+    col_num = len(df.columns)
+    row_num = len(df)
     new_df = pd.DataFrame(columns=['Country', df_name, 'Day'])
-    for i in range(1, colNum-2):
-        country = [df.columns[i]] * rowNum
+    for i in range(1, col_num-2):
+        country = [df.columns[i]] * row_num
         country = pd.Series(country)
         count = df.iloc[:, i].to_frame()
         days = df.iloc[:, 0]

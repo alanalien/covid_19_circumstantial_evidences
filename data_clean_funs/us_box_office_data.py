@@ -79,5 +79,5 @@ def us_box_office_cleaner(year=2020):
     dates['week'] = (dates['index']+1)[::-1].reset_index(drop=True)
     df['week'] = pd.to_numeric(df['week'])
     df = pd.merge(df, dates, left_on='week', right_on='week')
-    df.drop(['Date', 'week', 'overall_gross', 'index'], axis=1)
+    df = df.drop(['Date', 'week', 'overall_gross', 'index'], axis=1)
     return df
