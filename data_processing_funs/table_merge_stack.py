@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-Confirmed = pd.read_csv('data/confirmed.csv')
+confirmed = pd.read_csv('data/confirmed.csv')
 
 
 # def new_index_for_viz(df):
@@ -16,7 +16,7 @@ def transpose_for_altair(df, df_name):
     col_num = len(df.columns)
     row_num = len(df)
     new_df = pd.DataFrame(columns=['country_code', df_name, 'date'])
-    for i in range(1, col_num-2):
+    for i in range(1, col_num):
         country = [df.columns[i]] * row_num
         country = pd.Series(country)
         count = df.iloc[:, i].to_frame()

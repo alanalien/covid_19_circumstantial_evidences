@@ -32,10 +32,12 @@ box_office = bx.get_all_box_office_df(2020)
 us_box_office = usbx.us_box_office_cleaner(2020)
 box_office_full = pd.merge(box_office, us_box_office, left_on='date', right_on='date')
 box_office_full.to_csv('data/box_office.csv', index=False)
+# box_office_full = pd.read_csv('data/box_office.csv')
 
 # get mean box office from Mojo data
 # box_office_2019_mean = bx_mean.get_year_mean(2019)  # no need to run unless error
-box_office_2019_mean = pd.read_csv('data/box_office_2019_mean.csv')
+# box_office_2019_mean.to_csv('data_get/alt_data_sources/box_office_2019_mean.csv', index=False)
+box_office_2019_mean = pd.read_csv('data_get/alt_data_sources/box_office_2019_mean.csv')
 
 # get search trend data
 search_trend = stu.trend_update_output()
@@ -47,6 +49,7 @@ cn_search_trend.to_csv('data_get/alt_data_sources/baidu_trend.csv', index=False)
 # replace search_trend's CN_search (google trend) with cn_search_trend (baidu trend)
 search_trend['CN_search'] = cn_search_trend['CN_search']
 search_trend.to_csv('data/search_trends.csv', index=False)
+# search_trend = pd.read_csv('data/search_trends.csv')
 
 """
 stack and manipulate data for viz
@@ -90,12 +93,17 @@ def merge_all(merge_list=[confirmed, death, recovered, box_office_full, box_offi
     df['recovered_sqrt'] = np.sqrt(df['recovered'])
     df['active_cases'] = df['confirmed']-df['death']-df['recovered']
     df['active_cases_sqrt'] = np.sqrt(df['active_cases'])
+    # add country_name
+    current_countries.columns = ['country_code', 'country_name']
+    df = df.merge(current_countries, left_on='country_code', right_on='country_code', how='left')
+    # date to datetime
+    df['date'] = pd.to_datetime(df['date'])
     return df
 
 
 # driver codes
 all_data = merge_all()
-all_data.to_csv('data/all_data.csv')
+all_data.to_csv('data/all_data.csv', index=False)
 
 # timer end
 print("--- %s seconds ---" % (time.time() - start_time))
