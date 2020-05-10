@@ -70,8 +70,8 @@ def merge_trend_data():
 
 
 # # driver codes
-# search_trend_data = merge_trend_data()
-# search_trend_data.to_csv('data/search_trends_20200424.csv', index=False)
+# search_trend = merge_trend_data()
+# search_trend.to_csv('data/search_trends_20200424.csv', index=False)
 
 # # test
 # US_search = trend_data_clean('US')

@@ -1,6 +1,5 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
 
 
 def date_formatting(df):
@@ -162,6 +161,7 @@ def covid_data_get(type_to_get):  # type in ['confirmed', 'death', 'recovered'],
 # recovered = covid_data_get('recovered')
 
 # # test
+# import matplotlib.pyplot as plt
 # plt.cla()
 # confirmed.loc[:, :].plot(legend=None)
 # death.loc[:, :].plot(legend=None)
