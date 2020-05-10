@@ -148,8 +148,8 @@ def trend_updater(base_df, update_df):
 def trend_update_output():
     from data_processing_funs import search_trend_data as st
     base0424 = pd.read_csv('data_get/alt_data_sources/search_trends_20200424.csv')
-    # new = st.merge_trend_data()
-    new = pd.read_csv('temp/data/search_trends_20200508.csv')
+    new = st.merge_trend_data()
+    # new = pd.read_csv('temp/data/search_trends_20200508.csv')
     trend_df = trend_updater(base0424, new)
     return trend_df
 

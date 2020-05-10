@@ -37,6 +37,7 @@ def get_current_countries():
     country_table.loc[country_table['Code'] == 'NA', 'Name'] = 'Namibia'
 
     # country_table.to_csv('data/country_table.csv')
+    country_table = country_table.iloc[1:, :]
     return country_table
 
 

@@ -80,7 +80,7 @@ def country_code_update(df):
                 country_code = 'Cruise Ship'
             else:
                 country_code = ct.get(name=country_name).alpha_2
-        except Exception:
+        except KeyError:
             print('no result: ', country_name)
             country_code = 'None'
             pass
@@ -113,11 +113,11 @@ def remodeling(df, df_name):
     """
     # df_name = get_df_name(df)
     new_df = country_code_update(df)
-    new_df.rename(columns={'country_code': 'Date'}, inplace=True)
-    new_df = new_df.set_index('Date').T  # Date and its value (string) became index
+    # new_df.rename(columns={'country_code': 'date'}, inplace=True)
+    new_df = new_df.set_index('country_code').transpose().rename_axis('', axis=1)
+    new_df.index.name = 'date'
     new_df.index = pd.to_datetime(new_df.index)
     new_df = new_df.add_suffix('_' + df_name)
-    # new_df.set_index(new_df['Date'])
     return new_df
 
 
@@ -152,6 +152,8 @@ def covid_data_get(type_to_get):  # type in ['confirmed', 'death', 'recovered'],
 
     df = pd.read_csv(path + file_to_get)
     df = remodeling(df, type_to_get)
+    df = df.reset_index()
+    df['date'] = df['date'].astype(str)
     return df
 
 

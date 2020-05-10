@@ -5,15 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e3d6cf87-0530-4e85-9708-f7adb33f7932" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data_processing_funs/search_trend_updater.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/wildgoose.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/wildgoose.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_get/alt_data_sources/baiduTrendCN.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/box_office.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/box_office.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/confirmed.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/confirmed.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/death.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/death.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/recovered.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/recovered.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/search_trends.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/search_trends.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend_num.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend_num.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_get/covid_data_get.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_get/covid_data_get.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_get/search_trend_updater.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data_processing_funs/covid_cases_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_processing_funs/covid_cases_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_processing_funs/search_trend_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_processing_funs/search_trend_data.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/data/search_trends_20200508.csv" beforeDir="false" afterPath="$PROJECT_DIR$/temp/data/search_trends_20200508.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_processing_funs/get_country_list.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_processing_funs/get_country_list.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_processing_funs/search_trend_updater.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_processing_funs/search_trend_updater.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_processing_funs/table_merge_stack.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_processing_funs/table_merge_stack.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,42 +26,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_processing_funs/covid_cases_data.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="367">
-              <caret line="163" column="33" selection-start-line="163" selection-start-column="33" selection-end-line="163" selection-end-column="33" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data_get/covid_data_get.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="322">
-              <caret line="14" selection-start-line="14" selection-end-line="19" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend.csv">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1846" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_processing_funs/search_trend_updater.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-669">
-              <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
+            <state relative-caret-position="899">
+              <caret line="157" selection-start-line="157" selection-end-line="157" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
@@ -69,20 +41,57 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data_processing_funs/cn_search_trend_updater.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
+            <state relative-caret-position="572">
+              <caret line="30" column="69" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_processing_funs/search_trend_data.py">
+        <entry file="file://$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend_num.csv">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="642">
-              <caret line="63" column="32" selection-start-line="63" selection-start-column="32" selection-end-line="63" selection-end-column="32" />
+            <state relative-caret-position="-1595" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_get/covid_data_get.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="424">
+              <caret line="97" column="36" lean-forward="true" selection-start-line="44" selection-end-line="97" selection-end-column="36" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_get/alt_data_sources/country_codes.csv">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_get/alt_data_sources/search_trends_20200424.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="414">
+              <caret line="18" column="399" selection-start-line="18" selection-start-column="399" selection-end-line="18" selection-end-column="399" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1503" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data/search_trends.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-294">
+              <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -98,8 +107,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pd</find>
-      <find>p</find>
       <find>body</find>
       <find>country_code</find>
       <find>for i</find>
@@ -128,6 +135,8 @@
       <find>nan</find>
       <find>KM</find>
       <find>mean</find>
+      <find>Date</find>
+      <find>save</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -183,20 +192,22 @@
         <option value="$PROJECT_DIR$/data_clean_funs/table_merge_stack.py" />
         <option value="$PROJECT_DIR$/data_get/box_office_2019_mean.py" />
         <option value="$PROJECT_DIR$/data_get/box_office_data_mean_get.py" />
-        <option value="$PROJECT_DIR$/data_processing_funs/get_country_list.py" />
         <option value="$PROJECT_DIR$/data_processing_funs/us_box_office_data.py" />
         <option value="$PROJECT_DIR$/data_processing_funs/box_office_data.py" />
         <option value="$PROJECT_DIR$/data_processing_funs/box_office_yearly_mean.py" />
         <option value="$PROJECT_DIR$/data_get/search_trend_updater.py" />
         <option value="$PROJECT_DIR$/data_processing_funs/search_trend_data.py" />
         <option value="$PROJECT_DIR$/data/search_trends.csv" />
-        <option value="$PROJECT_DIR$/data_processing_funs/search_trend_updater.py" />
         <option value="$PROJECT_DIR$/temp/data/baiduTrendCN copy.csv" />
         <option value="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend_num.csv" />
         <option value="$PROJECT_DIR$/temp/data/baiduTrendCN.csv" />
         <option value="$PROJECT_DIR$/data_processing_funs/cn_search_trend_updater.py" />
-        <option value="$PROJECT_DIR$/data_get/covid_data_get.py" />
+        <option value="$PROJECT_DIR$/data_processing_funs/get_country_list.py" />
+        <option value="$PROJECT_DIR$/data_processing_funs/table_merge_stack.py" />
         <option value="$PROJECT_DIR$/data_processing_funs/covid_cases_data.py" />
+        <option value="$PROJECT_DIR$/temp/temp.py" />
+        <option value="$PROJECT_DIR$/data_processing_funs/search_trend_updater.py" />
+        <option value="$PROJECT_DIR$/data_get/covid_data_get.py" />
       </list>
     </option>
   </component>
@@ -211,6 +222,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -249,17 +261,10 @@
               <item name="covid_19_CE" type="462c0819:PsiDirectoryNode" />
               <item name="temp" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="covid_19_circumstantial_evidences" type="b2602c69:ProjectViewProjectNode" />
-              <item name="covid_19_CE" type="462c0819:PsiDirectoryNode" />
-              <item name="temp" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -523,7 +528,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589090969521</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="project update: bug fix, add baidu trend processor">
+      <created>1589121332672</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1589121332672</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TodoView">
@@ -536,10 +548,9 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1680" y="0" width="1110" height="1080" extended-state="0" />
-    <editor active="true" />
+    <frame x="1680" y="0" width="1920" height="1080" extended-state="0" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29109275" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2538178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" anchor="bottom" id="GitHub Pull Requests" order="0" sideWeight="0.4997367" weight="0.32970297" />
@@ -553,13 +564,13 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49815693" weight="0.32970297" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.48973143" weight="0.32772276" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51026857" side_tool="true" weight="0.32772276" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="11" sideWeight="0.8120063" visible="true" weight="0.33960396" />
+      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.8120063" visible="true" weight="0.32871288" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
     </layout>
     <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.16692996" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.29109275" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" anchor="bottom" id="GitHub Pull Requests" order="0" sideWeight="0.4997367" weight="0.32970297" />
@@ -588,7 +599,8 @@
     <MESSAGE value="auto update" />
     <MESSAGE value="data" />
     <MESSAGE value="project update" />
-    <option name="LAST_COMMIT_MESSAGE" value="project update" />
+    <MESSAGE value="project update: bug fix, add baidu trend processor" />
+    <option name="LAST_COMMIT_MESSAGE" value="project update: bug fix, add baidu trend processor" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="setValue">
@@ -600,14 +612,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/anaconda3/envs/covid19/lib/python3.7/xml/etree/ElementTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="586" selection-start-line="586" selection-end-line="586" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/click_ratio_data_v2.py" />
     <entry file="file://$USER_HOME$/anaconda3/envs/covid19/lib/python3.7/site-packages/dbfpy/dbf.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="710">
@@ -666,17 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/altair_viz/cases_vs_boxOffice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2139">
-          <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1589019943276" expanded="true" signature="945:998" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/anaconda3/envs/covid19/lib/python3.7/subprocess.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="156">
@@ -692,23 +685,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/country_table.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="13" lean-forward="true" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp/viz/test.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/boxOffice_20200420.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="17" column="114" selection-start-line="17" selection-start-column="114" selection-end-line="17" selection-end-column="114" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data/country_table.csv" />
+    <entry file="file://$PROJECT_DIR$/temp/viz/test.html" />
+    <entry file="file://$PROJECT_DIR$/data/boxOffice_20200420.csv" />
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -745,41 +724,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_processing_funs/table_merge_stack.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="10" column="37" selection-start-line="10" selection-start-column="37" selection-end-line="10" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/altair_viz/cases_by_day1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3745">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data/confirmed.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_get/alt_data_sources/country_codes.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-5250" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_get/box_office_data_get.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="23">
-          <caret line="1" selection-start-line="1" selection-end-line="7" selection-end-column="86" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data_get/box_office_data_get.py" />
     <entry file="file://$PROJECT_DIR$/data_processing_funs/us_box_office_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="551">
@@ -800,39 +748,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_processing_funs/get_country_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="802">
-          <caret line="43" column="2" lean-forward="true" selection-start-line="43" selection-start-column="2" selection-end-line="44" selection-end-column="69" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/altair_viz/cases_vs_searchTrend.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data_post/covid_data_update.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_get/box_office_data_mean_get.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="50" lean-forward="true" selection-start-line="4" selection-start-column="50" selection-end-line="4" selection-end-column="50" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/data_get/box_office_data_mean_get.py" />
     <entry file="file://$PROJECT_DIR$/temp/data/searchTrend_20200420.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="161">
@@ -857,16 +776,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_processing_funs/search_trend_updater.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-669">
-          <caret line="7" column="35" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/temp/data/baidu_trend_20200508.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="362">
@@ -874,20 +783,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp/data/baiduTrendCN.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="477">
-          <caret line="71" column="16" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_get/alt_data_sources/search_trends_20200424.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="399" selection-start-line="18" selection-start-column="399" selection-end-line="18" selection-end-column="399" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/data/baiduTrendCN.csv" />
     <entry file="file://$PROJECT_DIR$/data_processing_funs/search_trend_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="642">
@@ -901,44 +797,132 @@
     <entry file="file://$PROJECT_DIR$/temp/data/search_trends_20200508.csv">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/data/search_trends.csv">
+    <entry file="file://$PROJECT_DIR$/altair_viz/cases_vs_boxOffice.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2300">
-          <caret line="100" column="683" selection-start-line="100" selection-start-column="683" selection-end-line="100" selection-end-column="683" />
+        <state relative-caret-position="607">
+          <caret line="93" column="21" selection-start-line="93" selection-start-column="21" selection-end-line="93" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+            <marker date="1589019943276" expanded="true" signature="945:998" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data_processing_funs/cn_search_trend_updater.py">
+    <entry file="file://$PROJECT_DIR$/altair_viz/cases_by_day1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="30" column="63" selection-start-line="30" selection-start-column="63" selection-end-line="30" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend_num.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1846" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1846" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_processing_funs/covid_cases_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="367">
-          <caret line="163" column="33" selection-start-line="163" selection-start-column="33" selection-end-line="163" selection-end-column="33" />
+        <state relative-caret-position="-3900">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/data_processing_funs/get_country_list.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="430">
+          <caret line="39" column="44" selection-end-line="45" selection-end-column="69" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/anaconda3/envs/covid19/lib/python3.7/site-packages/pandas/core/generic.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="1691" selection-start-line="1691" selection-end-line="1691" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/altair_viz/cases_vs_searchTrend.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_processing_funs/table_merge_stack.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="736">
+          <caret line="32" column="35" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp/temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="56" selection-start-line="56" selection-end-line="58" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_processing_funs/search_trend_updater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="151" column="31" lean-forward="true" selection-start-line="151" selection-start-column="31" selection-end-line="151" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_processing_funs/cn_search_trend_updater.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="572">
+          <caret line="30" column="69" selection-start-line="30" selection-start-column="69" selection-end-line="30" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend_num.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1595" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_get/alt_data_sources/country_codes.csv">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_get/alt_data_sources/search_trends_20200424.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="414">
+          <caret line="18" column="399" selection-start-line="18" selection-start-column="399" selection-end-line="18" selection-end-column="399" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1503" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data_get/covid_data_get.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="14" selection-start-line="14" selection-end-line="19" selection-end-column="51" />
+        <state relative-caret-position="424">
+          <caret line="97" column="36" lean-forward="true" selection-start-line="44" selection-end-line="97" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#19#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/search_trends.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-294">
+          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_processing_funs/covid_cases_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="899">
+          <caret line="157" selection-start-line="157" selection-end-line="157" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
           </folding>
