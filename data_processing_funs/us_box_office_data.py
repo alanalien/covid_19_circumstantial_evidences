@@ -2,7 +2,7 @@ import pandas as pd
 import numpy as np
 import requests
 from bs4 import BeautifulSoup
-from data_clean_funs import box_office_data as bx
+from data_processing_funs import box_office_data as bx
 
 
 def us_box_office_scraper(year=2020):
@@ -80,4 +80,5 @@ def us_box_office_cleaner(year=2020):
     df['week'] = pd.to_numeric(df['week'])
     df = pd.merge(df, dates, left_on='week', right_on='week')
     df = df.drop(['Date', 'week', 'overall_gross', 'index'], axis=1)
+    df['date'] = pd.to_datetime(df['date'])
     return df

@@ -1,5 +1,5 @@
 import pandas as pd
-from data_clean_funs import covid_cases_data_clean as ccd
+from data_processing_funs import covid_cases_data as ccd
 import altair as alt
 
 alt.renderers.enable('html')

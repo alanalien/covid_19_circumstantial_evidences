@@ -8,8 +8,8 @@ def get_year_all(year=2019):
     :param year: default 2019
     :return: a data frame of box office data of each country in the designated year
     """
-    from data_clean_funs import box_office_data as bx
-    from data_clean_funs import us_box_office_data as usbx
+    from data_processing_funs import box_office_data as bx
+    from data_processing_funs import us_box_office_data as usbx
 
     box_office_all = bx.get_all_box_office_df(year)
     us_box_office_all = usbx.us_box_office_cleaner(year)
@@ -53,4 +53,5 @@ def get_year_mean(year=2019):
     return box_office_year_mean_df
 
 
-box_office_2019_means = get_year_mean(2019)
+# # driver codes
+# box_office_2019_mean = get_year_mean(2019)

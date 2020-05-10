@@ -1,19 +1,29 @@
 import pandas as pd
-from data_clean_funs import covid_cases_data_clean as ccd
+from data_processing_funs import covid_cases_data as ccd
+from data_processing_funs import get_country_list as cl
+from data_processing_funs import box_office_data as bx, us_box_office_data as usbx
+from data_processing_funs import box_office_yearly_mean as bx_mean
 
-path = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/"
-file1 = "time_series_covid19_confirmed_global.csv"
-file2 = "time_series_covid19_deaths_global.csv"
-file3 = "time_series_covid19_recovered_global.csv"
+# get JHU covid data
+confirmed = ccd.covid_data_get('confirmed')
+death = ccd.covid_data_get('death')
+recovered = ccd.covid_data_get('recovered')
+confirmed.to_csv('data/confirmed.csv', index=False)
+death.to_csv('data/death.csv', index=False)
+recovered.to_csv('data/recovered.csv', index=False)
 
-confirmed = pd.read_csv(path + file1)
-death = pd.read_csv(path + file2)
-recovered = pd.read_csv(path + file3)
+# get current affected countries from JHU covid confirmed data
+current_countries = cl.get_current_countries()
+current_countries.to_csv('data/current_countries.csv', index=False)
 
-Confirmed = ccd.remodeling(df=confirmed, df_name='confirmed')
-Death = ccd.remodeling(df=death, df_name='death')
-Recovered = ccd.remodeling(df=recovered, df_name='recovered')
+# get box office from IMDB Mojo Box Office website
+box_office = bx.get_all_box_office_df(2020)
+us_box_office = usbx.us_box_office_cleaner(2020)
+box_office_full = pd.merge(box_office, us_box_office, left_on='date', right_on='date')
+box_office_full.to_csv('data/box_office.csv')
 
-Confirmed.to_csv('data/confirmed.csv', index=False)
-Death.to_csv('data/death.csv', index=False)
-Recovered.to_csv('data/recovered.csv', index=False)
+# get mean box office from Mojo data
+box_office_2019_mean = bx_mean.get_year_mean(2019)
+box_office_2019_mean.to_csv('data/box_office_2019_mean.csv', index=False)
+
+#

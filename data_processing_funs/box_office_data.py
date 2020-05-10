@@ -197,6 +197,7 @@ def get_all_box_office_df(year=2020):
         time.sleep(3)
     # remove the redundant date index
     box_office_df = box_office_df.reset_index(drop=True)
+    box_office_df['date'] = pd.to_datetime(box_office_df['date'])
     return box_office_df
 
 

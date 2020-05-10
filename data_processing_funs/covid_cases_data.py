@@ -124,57 +124,46 @@ def remodeling(df, df_name):
 
 # TEST:
 
+def covid_data_get(type_to_get):  # type in ['confirmed', 'death', 'recovered'], case insensitive
+    """
+    driving data retriever,
+    calls former functions to generate a cleaned covid data of designated type,
+    i.e. confirmed/death/recovered
+    data source from John Hopkins University COVID-19 data portal on GitHub
+    :param type_to_get: i.e. confirmed/death/recovered
+    :return: a data frame with date as index and countries (in ISO alpha_2 country code) as columns
+    """
+    type_to_get = str(type_to_get).lower()
+    path = "https://raw.githubusercontent.com/" \
+           "CSSEGISandData/COVID-19/master/" \
+           "csse_covid_19_data/" \
+           "csse_covid_19_time_series/"
+    file1 = "time_series_covid19_confirmed_global.csv"
+    file2 = "time_series_covid19_deaths_global.csv"
+    file3 = "time_series_covid19_recovered_global.csv"
+    file_to_get = ""
+    if type_to_get == 'confirmed':
+        file_to_get = file1
+    elif type_to_get == 'death':
+        file_to_get = file2
+    elif type_to_get == 'recovered':
+        file_to_get = file3
+    else:
+        print('data type not exist')
 
-# driver codes:
+    df = pd.read_csv(path + file_to_get)
+    df = remodeling(df, type_to_get)
+    return df
 
-path = "https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/"
-file1 = "time_series_covid19_confirmed_global.csv"
-file2 = "time_series_covid19_deaths_global.csv"
-file3 = "time_series_covid19_recovered_global.csv"
 
-confirmed = pd.read_csv(path + file1)
-death = pd.read_csv(path + file2)
-recovered = pd.read_csv(path + file3)
+# # driver codes:
+# confirmed = covid_data_get('confirmed')
+# death = covid_data_get('death')
+# recovered = covid_data_get('recovered')
 
-CF = remodeling(confirmed, 'confirmed')
-DT = remodeling(death, 'death')
-CU = remodeling(recovered, 'CU')
-
+# # test
 # plt.cla()
-# CF.loc[:, :].plot(legend=None)
-# DT.loc[:, :].plot(legend=None)
-# CU.loc[:, :].plot(legend=None)
-
-
-# Get Country List
-"""
-get countries
-"""
-
-country_table_path2 = 'data/country_codes.csv'
-countries = pd.read_csv(country_table_path2)  # country table: names / alpha_2 codes
-
-country_table = pd.DataFrame(columns=['Code'])
-country_affected = []
-for i in CF.columns:
-    country_affected.append(i[:2])
-
-country_table['Code'] = country_table['Code'].append(pd.Series(country_affected), ignore_index=True)
-country_table = pd.merge(country_table, countries, how='left', left_on='Code', right_on='Code')
-
-# country_table[country_table['Name'].isnull() == True]
-# #     Code Name
-# # 90    XK  NaN
-# # 116   NA  NaN
-
-# XK = Kosovo, NA = Namibia
-# Manually insert
-country_table.loc[country_table['Code'] == 'XK', 'Name'] = 'Kosovo'
-country_table.loc[country_table['Code'] == 'NA', 'Name'] = 'Namibia'
-
-country_table.to_csv('data/country_table.csv')
-"""
-country_table might need update
-when new countries have new coronavirus cases
-"""
+# confirmed.loc[:, :].plot(legend=None)
+# death.loc[:, :].plot(legend=None)
+# recovered.loc[:, :].plot(legend=None)
 

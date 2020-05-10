@@ -2,11 +2,14 @@
   <dictionary name="wildgoose">
     <words>
       <w>awis</w>
+      <w>baidu</w>
       <w>coronavirus</w>
       <w>covid</w>
       <w>dropdown</w>
+      <w>imdb</w>
       <w>pytrend</w>
       <w>shapefile</w>
+      <w>usbx</w>
     </words>
   </dictionary>
 </component>
