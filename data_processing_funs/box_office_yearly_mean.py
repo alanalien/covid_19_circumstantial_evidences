@@ -49,7 +49,7 @@ def get_year_mean(year=2019):
     box_office_year_mean_df = pd.DataFrame(box_office_year_mean_dict, index=[0])
     # transpose the data frame to a 2-column data frame, rename the columns
     box_office_year_mean_df = box_office_year_mean_df.T.reset_index()
-    box_office_year_mean_df.columns = ['Country', ('box_office_' + str(year) + '_mean')]
+    box_office_year_mean_df.columns = ['country_code', ('box_office_' + str(year) + '_mean')]
     return box_office_year_mean_df
 
 

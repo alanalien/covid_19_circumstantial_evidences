@@ -16,114 +16,86 @@ all_data = pd.read_csv('data/all_data.csv')
 base_map_path = 'data/base_map/base_map_50m_4326.shp'
 gdf = mapr.get_gpd_df(base_map_path, True)
 
-
-color_list = ['black', 'silver', 'gray', 'white', 'maroon', 'red', 'purple', 'fuchsia', 'green', 'lime',
-              'olive', 'yellow', 'navy', 'blue', 'teal', 'aqua', 'orange', 'aliceblue', 'antiquewhite',
-              'aquamarine', 'azure', 'beige', 'bisque', 'blanchedalmond', 'blueviolet', 'brown', 'burlywood',
-              'cadetblue', 'chartreuse', 'chocolate', 'coral', 'cornflowerblue', 'cornsilk', 'crimson', 'cyan',
-              'darkblue', 'darkcyan', 'darkgoldenrod', 'darkgray', 'darkgreen', 'darkgrey', 'darkkhaki', 'darkmagenta',
-              'darkolivegreen', 'darkorange', 'darkorchid', 'darkred', 'darksalmon', 'darkseagreen', 'darkslateblue',
-              'darkslategray', 'darkslategrey', 'darkturquoise', 'darkviolet', 'deeppink', 'deepskyblue', 'dimgray',
-              'dimgrey', 'dodgerblue', 'firebrick', 'floralwhite', 'forestgreen', 'gainsboro', 'ghostwhite', 'gold',
-              'goldenrod', 'greenyellow', 'grey', 'honeydew', 'hotpink', 'indianred', 'indigo', 'ivory', 'khaki',
-              'lavender', 'lavenderblush', 'lawngreen', 'lemonchiffon', 'lightblue', 'lightcoral', 'lightcyan',
-              'lightgoldenrodyellow', 'lightgray', 'lightgreen', 'lightgrey', 'lightpink', 'lightsalmon',
-              'lightseagreen', 'lightskyblue', 'lightslategray', 'lightslategrey', 'lightsteelblue',
-              'lightyellow', 'limegreen', 'linen', 'magenta', 'mediumaquamarine', 'mediumblue', 'mediumorchid',
-              'mediumpurple', 'mediumseagreen', 'mediumslateblue', 'mediumspringgreen', 'mediumturquoise',
-              'mediumvioletred', 'midnightblue', 'mintcream', 'mistyrose', 'moccasin', 'navajowhite', 'oldlace',
-              'olivedrab', 'orangered', 'orchid', 'palegoldenrod', 'palegreen', 'paleturquoise', 'palevioletred',
-              'papayawhip', 'peachpuff', 'peru', 'pink', 'plum', 'powderblue', 'rosybrown', 'royalblue', 'saddlebrown',
-              'salmon', 'sandybrown', 'seagreen', 'seashell', 'sienna', 'skyblue', 'slateblue', 'slategray',
-              'slategrey', 'snow', 'springgreen', 'steelblue', 'tan', 'thistle', 'tomato', 'turquoise', 'violet',
-              'wheat', 'whitesmoke', 'yellowgreen', 'rebeccapurple']
-
-keys = ['active', 'confirmed', 'country_code', 'death', 'iso_a2', 'name_cn', 'name_en', 'recovered', 'reg', 'sub_reg']
-
-"""
-main map
-"""
 # merge geo data with covid_today data
 country_map = gdf.merge(today_data, left_on='iso_a2', right_on='country_code', how='outer')
 # covert geo data frame to json and extract 'feature' section
 choro_json = json.loads(country_map.to_json())
 choro_data = alt.Data(values=choro_json['features'])
+# 'active', 'confirmed', 'country_code', 'death', 'iso_a2', 'name_cn', 'name_en', 'recovered', 'reg', 'sub_reg'
+all_data.columns = ['properties.country_code',
+                    'date', 'confirmed', 'death', 'recovered',
+                    'box_office_full', 'box_office_2019_mean', 'search_trend',
+                    'box_office_norm', 'confirmed_sqrt', 'death_sqrt', 'recovered_sqrt',
+                    'active_cases', 'active_cases_sqrt', 'country_name', 'region',
+                    'sub_region', 'country_name_cn']
+country_code_list = all_data['properties.country_code'].unique().tolist()
 
 
-def map_generator():
-    """
-    Generates Toronto neighbourhoods map with building count choropleth
-    :return:
-    """
+# main selection
+selection = alt.selection_multi(fields=['properties.country_code'])
 
-    # Add Base Layer
-    base = alt.Chart(choro_data).mark_geoshape(
-        color='#EFEFEF',  # color for countries with no data
-        stroke='white',
-        strokeWidth=0.5
-    ).encode(
-    ).properties(
-        width=750,
-        height=750
-    )
+"""
+main map
+"""
 
-    # Add choropleth Layer
-    choro = alt.Chart(choro_data).mark_geoshape(
-        stroke='white',
-        strokeWidth=0.5,
-        opacity=0.8
-    ).encode(
-        alt.Color('properties.active',
-                  type='quantitative',
-                  scale=alt.Scale(type='symlog',
-                                  # ['linear', 'log', 'pow', 'sqrt', *'symlog', 'identity',
-                                  # 'sequential', 'time', 'utc', 'quantile', 'quantize',
-                                  # 'threshold', 'bin-ordinal', 'ordinal', 'point', 'band'],
-                                  scheme='yelloworangered'),
-                  title="Active Cases",
-                  legend=alt.Legend(orient="bottom",
-                                    offset=-200)
-                  )
-    )
+# Add Base Layer
+base = alt.Chart(choro_data).mark_geoshape(
+    color='#EFEFEF',  # color for countries with no data
+    stroke='white',
+    strokeWidth=0.5
+).encode(
+).properties(
+    width=750,
+    height=750
+)
 
-    # add selector layer
-    selection = alt.selection_multi(fields=['properties.country_code'])
-    select_color = alt.condition(selection,
-                                 alt.value('black'),
-                                 alt.value('white')
-                                 )
-    select_opacity = alt.condition(selection,
-                                   if_true=alt.value(0.5),
-                                   if_false=alt.value(0)
-                                   )
-    selector = alt.Chart(choro_data).mark_geoshape(
-        stroke='white',
-        strokeWidth=0.5,
-        opacity=0
-    ).encode(
-        color=select_color,
-        opacity=select_opacity,
-        tooltip=['properties.name_en:N',
-                 'properties.active:Q',
-                 'properties.confirmed:Q',
-                 'properties.death:Q',
-                 'properties.recovered:Q'
-                 ]
-    ).add_selection(
-        selection
-    )
+# Add choropleth Layer
+choro = alt.Chart(choro_data).mark_geoshape(
+    stroke='white',
+    strokeWidth=0.5,
+    opacity=0.8
+).encode(
+    alt.Color('properties.active',
+              type='quantitative',
+              scale=alt.Scale(type='symlog',
+                              # ['linear', 'log', 'pow', 'sqrt', *'symlog', 'identity',
+                              # 'sequential', 'time', 'utc', 'quantile', 'quantize',
+                              # 'threshold', 'bin-ordinal', 'ordinal', 'point', 'band'],
+                              scheme='yelloworangered'),
+              title="Active Cases",
+              legend=alt.Legend(orient="bottom",
+                                offset=-200)
+              )
+)
 
-    out = base + choro + selector
+# add selector layer
+select_color = alt.condition(selection,
+                             alt.value('black'),
+                             alt.value('white')
+                             )
+select_opacity = alt.condition(selection,
+                               if_true=alt.value(0.5),
+                               if_false=alt.value(0)
+                               )
+selector = alt.Chart(choro_data).mark_geoshape(
+    stroke='white',
+    strokeWidth=0.5,
+    opacity=0
+).encode(
+    color=select_color,
+    opacity=select_opacity,
+    tooltip=['properties.name_en:N',
+             'properties.active:Q',
+             'properties.confirmed:Q',
+             'properties.death:Q',
+             'properties.recovered:Q'
+             ]
+).add_selection(
+    selection
+)
 
-    out = out.configure_view(
-        strokeWidth=0
-    )
-
-    return out
-
-
-main_map = map_generator()
-main_map.save('temp/viz/test_map.html')
+main_map = base + choro + selector
+# main_map.save('temp/viz/test_map.html')
 
 
 """
@@ -131,34 +103,42 @@ confirmed sqrt vs search_trend
 """
 
 
-def gen_sqrt_vs_st(source=all_data):
-    base = alt.Chart(source).mark_point(size=60).encode(
-        x='confirmed_sqrt',
-        y='search_trend',
-        color='country_code',
-        tooltip=['country_name', 'date', 'confirmed', 'death', 'recovered', 'search_trend']
-    )
+scatter_1_base = alt.Chart(all_data).mark_circle(size=15).encode(
+    x='confirmed_sqrt',
+    y='search_trend',
+    color='region:N',
+    opacity=alt.value(0.3),
+    tooltip=['country_name', 'date', 'confirmed', 'death', 'recovered', 'search_trend']
+).properties(
+    title="Search Trend vs Confirmed Cases",
+    width=300,
+    height=200
+)
 
-    chart = base.properties(
-        title="Search Trend vs Confirmed Cases",
-        width=960,
-        height=720
-    )
+# country_select = alt.selection_single(fields=['properties.country_name'], bind=selection, name="country_name")
+sqrt_vs_st = scatter_1_base.add_selection(
+    selection
+)
 
-    # get unique country_codes
-    country_names = df['country_name'].unique().tolist()
-
-    country_dropdown = alt.binding_select(options=country_names)
-    country_select = alt.selection_single(fields=['country_name'], bind=country_dropdown, name="country_name")
-
-    filtered = chart.add_selection(
-        country_select
-    ).transform_filter(
-        country_select
-    )
-
-    return filtered
+sqrt_vs_st.save('temp/viz/test8_cf_vs_st.html')
 
 
-scatter_1 = gen_sqrt_vs_st()
-scatter_1.save('temp/viz/test8_cf_vs_st.html')
+"""
+confirmed cases vs box office (normalized by last year's average
+"""
+chart = alt.Chart(all_data).mark_circle(size=15).encode(
+    x='confirmed_sqrt',
+    y='box_office_norm',
+    color='region:N',
+    opacity=alt.value(0.3),
+    tooltip=['country_name', 'date', 'confirmed', 'death', 'recovered', 'box_office_full']
+).properties(
+    title="Box Office vs Confirmed Cases",
+    width=300,
+    height=200
+)
+
+chart.save('temp/viz/test9_cf_vs_bx.html')
+
+# sqrt_vs_st | main_map
+alt.hconcat(sqrt_vs_st, main_map).save('temp/viz/test9_compound.html')

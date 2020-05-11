@@ -69,7 +69,7 @@ def get_df_name(df):
     return name
 
 
-my_list = [confirmed, death, recovered, box_office_full, box_office_2019_mean, search_trend]
+my_list = [confirmed, death, recovered, box_office_full, search_trend]
 
 
 def merge_all(merge_list=my_list):
@@ -78,18 +78,18 @@ def merge_all(merge_list=my_list):
     and append derived columns
     :return: a data frame with all data for visualization
     """
-    # merge_list = [confirmed, death, recovered, box_office_full, box_office_2019_mean, search_trend]
     df = tms.transpose_for_altair(confirmed, 'confirmed')
     # reorder columns to simplify further steps
     df = df.iloc[:, [0, 2, 1]]
     # call easy_merge function to merge all data frames in the list
-    for i in merge_list[1:]:
+    for i in merge_list[1:]:  # skip 'confirmed'
         i_name = get_df_name(i)
         df_to_append = tms.transpose_for_altair(i, i_name)
         df = tms.easy_merge(df, df_to_append)
     # make all data numeric
     for i in df.iloc[:, 2:]:
         df[i] = pd.to_numeric(df[i])
+    df = df.merge(box_office_2019_mean, left_on='country_code', right_on='country_code', how='left')
     # get additional information
     df['box_office_norm'] = df['box_office_full']/df['box_office_2019_mean']*100
     df['confirmed_sqrt'] = np.sqrt(df['confirmed'])
@@ -100,6 +100,8 @@ def merge_all(merge_list=my_list):
     # add country_name
     current_countries.columns = ['country_code', 'country_name']
     df = df.merge(current_countries, left_on='country_code', right_on='country_code', how='left')
+    country_info = pd.read_csv('data_get/alt_data_sources/country_info.csv')
+    df = df.merge(country_info, left_on='country_code', right_on='country_code', how='left')
     # date to datetime
     df['date'] = pd.to_datetime(df['date'])
     return df
