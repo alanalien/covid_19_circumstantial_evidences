@@ -108,7 +108,7 @@ selector = alt.Chart(choro_data).mark_geoshape(
 )
 
 main_map = base + choro + selector
-main_map.save('temp/viz/test_map.html')
+main_map.save('viz_file/test_map.html')
 
 
 """
@@ -167,7 +167,7 @@ bx_line = alt.Chart(bx_no_na).mark_line(
     key='box_office_full:Q'
 )
 
-bx_line.save('temp/viz/bx_L2.html')
+bx_line.save('viz_file/bx_L2.html')
 bx_L2 = bx_line
 
 """
@@ -218,7 +218,7 @@ rc_line = alt.Chart(all_data).mark_line(
 )
 
 covid_line = cf_line + dt_line + rc_line
-covid_line.save('temp/viz/covid_L3.html')
+covid_line.save('viz_file/covid_L3.html')
 covid_L3 = covid_line
 
 
@@ -243,7 +243,7 @@ st_scatter = alt.Chart(cf_drop_zero).mark_circle(size=15).encode(
     height=180
 )
 
-st_scatter.save('temp/viz/st_R1.html')
+st_scatter.save('viz_file/st_R1.html')
 st_R1 = st_scatter
 
 
@@ -259,7 +259,7 @@ bx_scatter = alt.Chart(cf_drop_zero).mark_circle(size=15).encode(
     color=alt.Color('country_name:N',
                     legend=None
                     ),
-    opacity=alt.value(0.3),
+    opacity=alt.value(0.8),
     tooltip=['country_name', 'date', 'confirmed', 'death', 'recovered', 'box_office_full']
 ).properties(
     title="Box Office vs Confirmed Cases",
@@ -267,7 +267,7 @@ bx_scatter = alt.Chart(cf_drop_zero).mark_circle(size=15).encode(
     height=180
 )
 
-bx_scatter.save('temp/viz/bx_R2.html')
+bx_scatter.save('viz_file/bx_R2.html')
 bx_R2 = bx_scatter
 
 
@@ -286,7 +286,7 @@ act_area = alt.Chart(all_data).mark_area().encode(
     height=180
 )
 
-act_area.save('temp/viz/act_B1.html')
+act_area.save('viz_file/act_B1.html')
 act_B1 = act_area
 
 
@@ -310,7 +310,7 @@ output = (((st_L1 & bx_L2 & covid_L3) | main_map | (st_R1 & bx_R2)) & act_B1).co
 ).configure_view(
     strokeOpacity=0
 )
-output.save('viz_file/dashboard.html')
+output.save('index.html')
 
 
 
