@@ -93,6 +93,7 @@ def merge_all(merge_list=my_list):
     # get additional information
     df['box_office_norm'] = df['box_office_full']/df['box_office_2019_mean']*100
     df['confirmed_sqrt'] = np.sqrt(df['confirmed'])
+    df['confirmed_4rt'] = np.sqrt(df['confirmed_sqrt'])
     df['death_sqrt'] = np.sqrt(df['death'])
     df['recovered_sqrt'] = np.sqrt(df['recovered'])
     df['active_cases'] = df['confirmed']-df['death']-df['recovered']
