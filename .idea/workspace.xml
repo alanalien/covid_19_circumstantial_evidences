@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="e3d6cf87-0530-4e85-9708-f7adb33f7932" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/altair_viz/viz_gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/altair_viz/viz_gen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/viz/bx_R2.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/viz/bx_R2.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/viz/test_map.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/viz/test_map.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/viz_file/dashboard.html" beforeDir="false" afterPath="$PROJECT_DIR$/viz_file/dashboard.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,11 +18,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/altair_viz/viz_gen.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-406">
-              <caret line="288" column="23" selection-end-line="498" selection-end-column="59" />
+            <state relative-caret-position="267">
+              <caret line="48" column="78" selection-end-line="498" selection-end-column="59" />
               <folding>
                 <element signature="e#0#19#0" expanded="true" />
-                <marker date="1589224818486" expanded="true" signature="10290:10291" ph="..." />
+                <marker date="1589225371474" expanded="true" signature="10303:10304" ph="..." />
               </folding>
             </state>
           </provider>
@@ -219,28 +216,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="covid_19_circumstantial_evidences" type="b2602c69:ProjectViewProjectNode" />
-              <item name="covid_19_CE" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="covid_19_circumstantial_evidences" type="b2602c69:ProjectViewProjectNode" />
-              <item name="covid_19_CE" type="462c0819:PsiDirectoryNode" />
-              <item name="altair_viz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="covid_19_circumstantial_evidences" type="b2602c69:ProjectViewProjectNode" />
-              <item name="covid_19_CE" type="462c0819:PsiDirectoryNode" />
-              <item name="altair_viz" type="462c0819:PsiDirectoryNode" />
-              <item name="pilot_viz" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -575,7 +551,14 @@
       <option name="project" value="LOCAL" />
       <updated>1589223963194</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="project update: finalized viz codes">
+      <created>1589224923408</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1589224923408</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TodoView">
@@ -590,7 +573,7 @@
   <component name="ToolWindowManager">
     <frame x="1680" y="0" width="1920" height="1080" extended-state="0" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2538178" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2538178" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info active="true" anchor="bottom" id="GitHub Pull Requests" order="0" sideWeight="0.4997367" weight="0.32970297" />
@@ -604,7 +587,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49815693" weight="0.32970297" />
       <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.48973143" weight="0.32772276" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51026857" side_tool="true" weight="0.32772276" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.8120063" visible="true" weight="0.3108911" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="11" sideWeight="0.8120063" visible="true" weight="0.3108911" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -970,11 +953,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/altair_viz/viz_gen.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-406">
-          <caret line="288" column="23" selection-end-line="498" selection-end-column="59" />
+        <state relative-caret-position="267">
+          <caret line="48" column="78" selection-end-line="498" selection-end-column="59" />
           <folding>
             <element signature="e#0#19#0" expanded="true" />
-            <marker date="1589224818486" expanded="true" signature="10290:10291" ph="..." />
+            <marker date="1589225371474" expanded="true" signature="10303:10304" ph="..." />
           </folding>
         </state>
       </provider>
