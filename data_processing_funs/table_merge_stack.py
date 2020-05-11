@@ -1,15 +1,6 @@
 import pandas as pd
 import numpy as np
 
-confirmed = pd.read_csv('data/confirmed.csv')
-
-
-# def new_index_for_viz(df):
-#     df.index.name = 'Date'
-#     df = df.reset_index()
-#     return df
-# # test = new_index_for_viz(Confirmed)
-
 
 def transpose_for_altair(df, df_name):
     # df = new_index_for_viz(df)

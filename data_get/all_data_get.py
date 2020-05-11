@@ -8,6 +8,7 @@ from data_processing_funs import box_office_yearly_mean as bx_mean
 from data_processing_funs import search_trend_updater as stu
 from data_processing_funs import cn_search_trend_updater as cnstu
 from data_processing_funs import table_merge_stack as tms
+from data_processing_funs import covid_today as ctd
 
 # timer
 start_time = time.time()
@@ -68,7 +69,10 @@ def get_df_name(df):
     return name
 
 
-def merge_all(merge_list=[confirmed, death, recovered, box_office_full, box_office_2019_mean, search_trend]):
+my_list = [confirmed, death, recovered, box_office_full, box_office_2019_mean, search_trend]
+
+
+def merge_all(merge_list=my_list):
     """
     merge_all selected data frames
     and append derived columns
@@ -104,6 +108,10 @@ def merge_all(merge_list=[confirmed, death, recovered, box_office_full, box_offi
 # driver codes
 all_data = merge_all()
 all_data.to_csv('data/all_data.csv', index=False)
+
+covid_today = ctd.concat_data_today()
+covid_today.to_csv('data/covid_today.csv', index=False)
+
 
 # timer end
 print("--- %s seconds ---" % (time.time() - start_time))

@@ -21,6 +21,6 @@ def get_gpd_df(file_path, use_shape_file=True):
     if use_shape_file:
         gdf = gpd.read_file(file_path)
     else:
-        toronto_json = open_geojson()
-        gdf = gpd.GeoDataFrame.from_features(toronto_json)
+        my_json = open_geojson()
+        gdf = gpd.GeoDataFrame.from_features(my_json)
     return gdf
