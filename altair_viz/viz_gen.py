@@ -231,8 +231,8 @@ cf_drop_zero = all_data.loc[all_data['confirmed'] != 0, :].reset_index(drop=True
 st_scatter = alt.Chart(cf_drop_zero).mark_circle(size=15).encode(
     x=alt.X('confirmed:Q', scale=alt.Scale(zero=False, type='sqrt')),
     y=alt.Y('search_trend:Q', scale=alt.Scale(zero=True, type='linear')),
-    color=alt.Color('region:N',
-                    # 'country_name:N',
+    color=alt.Color('country_name:N',
+                    # 'region:N'
                     # legend=None
                     ),
     opacity=alt.value(0.3),
@@ -257,7 +257,7 @@ bx_scatter = alt.Chart(cf_drop_zero).mark_circle(size=15).encode(
     x=alt.X('confirmed:Q', scale=alt.Scale(zero=False, type='sqrt')),
     y=alt.Y('box_office_norm:Q', scale=alt.Scale(zero=True, type='linear')),
     color=alt.Color('country_name:N',
-                    legend=None
+                    # legend=None
                     ),
     opacity=alt.value(0.8),
     tooltip=['country_name', 'date', 'confirmed', 'death', 'recovered', 'box_office_full']
