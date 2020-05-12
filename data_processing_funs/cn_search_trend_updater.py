@@ -21,7 +21,7 @@ def cn_trend_updater():
         # if NaN, meaning the date haven't been input
         if math.isnan(r['CN_search']) is True:
             # call os.system to make some noise
-            os.system('say "Hey, Need Input."')
+            os.system('say "Hey, Another New Day."')
             # open the baidu trend page
             url = 'http://index.baidu.com/v2/main/index.html#/trend/' \
                   '%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92?words=%E5%86%A0%E7%8A%B6%E7%97%85%E6%AF%92'

@@ -30,8 +30,7 @@ choro_data = alt.Data(values=choro_json['features'])
 # rename country_code column to 'properties.country_code', to match with json
 all_data.columns = ['properties.country_code', 'date', 'confirmed', 'death', 'recovered',
                     'box_office_full', 'search_trend', 'box_office_2019_mean',
-                    'box_office_norm', 'confirmed_sqrt', 'confirmed_4rt', 'death_sqrt',
-                    'recovered_sqrt', 'active_cases', 'active_cases_sqrt', 'country_name',
+                    'box_office_norm', 'active_cases', 'country_name',
                     'region', 'sub_region', 'country_name_cn']
 
 # get a list for drop down
