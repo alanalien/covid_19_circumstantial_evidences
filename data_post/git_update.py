@@ -1,5 +1,3 @@
-
-
 def auto_commit(content="data", comment="'data daily auto update'", add=False):
     """
     this function commit and push changes to the github repository

@@ -1,3 +1,8 @@
+# import os
+# import subprocess as cmd
+# import sys
+# sys.path.append('/Users/wildgoose/PycharmProjects/covid_19_CE')
+
 import pandas as pd
 import numpy as np
 import time
@@ -12,6 +17,8 @@ from data_processing_funs import covid_today as ctd
 
 # timer
 start_time = time.time()
+
+
 """
 get all data and write to local
 """
