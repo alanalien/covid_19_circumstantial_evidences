@@ -1,8 +1,15 @@
 import pandas as pd
 import numpy as np
+import time
 import geopandas as gpd
 import json
 import altair as alt
+
+import sys
+# temporarily append the project directory to sys.path
+# to allow the usage of the following modules
+sys.path.append('/Users/wildgoose/PycharmProjects/covid_19_CE')
+
 from altair_viz import map_reader as mapr
 
 alt.data_transformers.disable_max_rows()  # disable 5000 rows limitation

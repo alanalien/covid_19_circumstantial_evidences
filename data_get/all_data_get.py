@@ -1,11 +1,12 @@
-# import os
-# import subprocess as cmd
-# import sys
-# sys.path.append('/Users/wildgoose/PycharmProjects/covid_19_CE')
-
 import pandas as pd
 import numpy as np
 import time
+
+import sys
+# temporarily append the project directory to sys.path
+# to allow the usage of the following modules
+sys.path.append('/Users/wildgoose/PycharmProjects/covid_19_CE')
+
 from data_processing_funs import covid_cases_data as ccd
 from data_processing_funs import get_country_list as cl
 from data_processing_funs import box_office_data as bx, us_box_office_data as usbx
