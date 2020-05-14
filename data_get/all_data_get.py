@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import time
+from datetime import date
 
 import sys
 # temporarily append the project directory to sys.path
@@ -37,10 +38,14 @@ current_countries = cl.get_current_countries()
 current_countries.to_csv('data/current_countries.csv', index=False)
 
 # get box office from IMDB Mojo Box Office website
-box_office = bx.get_all_box_office_df(2020)
-us_box_office = usbx.us_box_office_cleaner(2020)
-box_office_full = pd.merge(box_office, us_box_office, left_on='date', right_on='date')
-box_office_full.to_csv('data/box_office.csv', index=False)
+# only update on tuesdays to save run time
+if date.today().weekday() == 1:  # whether today is tuesday
+    box_office = bx.get_all_box_office_df(2020)
+    us_box_office = usbx.us_box_office_cleaner(2020)
+    box_office_full = pd.merge(box_office, us_box_office, left_on='date', right_on='date')
+    box_office_full.to_csv('data/box_office.csv', index=False)
+else:
+    box_office_full = pd.read_csv('data/box_office.csv')
 # box_office_full = pd.read_csv('data/box_office.csv')
 
 # get mean box office from Mojo data

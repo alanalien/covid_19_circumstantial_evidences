@@ -1,6 +1,13 @@
 import pandas as pd
 import numpy as np
 
+import sys
+# temporarily append the project directory to sys.path
+# to allow the usage of the following modules
+sys.path.append('/Users/wildgoose/PycharmProjects/covid_19_CE')
+
+from data_processing_funs import search_trend_data as st
+
 
 def trend_updater(base_df, update_df):
     """
@@ -8,7 +15,7 @@ def trend_updater(base_df, update_df):
     and tries to normalize the data
     :param base_df:
     :param update_df:
-    :return:
+    :return: a concatenated data frame
     """
     base_df['date'] = base_df['date'].astype(str)
     update_df['date'] = update_df['date'].astype(str)
@@ -146,11 +153,14 @@ def trend_updater(base_df, update_df):
 
 
 def trend_update_output():
-    from data_processing_funs import search_trend_data as st
-    base0424 = pd.read_csv('data_get/alt_data_sources/search_trends_20200424.csv')
+    # # read the earliest search trend data
+    # base = pd.read_csv('data_get/alt_data_sources/search_trends_20200424.csv')
+    # read last search trend data
+    base = pd.read_csv('data/search_trends.csv')
+    # call get search trend function
     new = st.merge_trend_data()
     # new = pd.read_csv('temp/data/search_trends_20200508.csv')
-    trend_df = trend_updater(base0424, new)
+    trend_df = trend_updater(base, new)
     return trend_df
 
 

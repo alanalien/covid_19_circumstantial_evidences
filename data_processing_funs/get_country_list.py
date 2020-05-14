@@ -1,5 +1,11 @@
 import pandas as pd
 import numpy as np
+
+import sys
+# temporarily append the project directory to sys.path
+# to allow the usage of the following modules
+sys.path.append('/Users/wildgoose/PycharmProjects/covid_19_CE')
+
 from data_processing_funs import covid_cases_data as ccd
 
 
