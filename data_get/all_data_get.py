@@ -126,3 +126,4 @@ covid_today.to_csv('data/covid_today.csv', index=False)
 
 # timer end
 print("--- %s seconds ---" % (time.time() - start_time))
+print('\n\n\n ################## covid data has been updated ################## \n\n\n')

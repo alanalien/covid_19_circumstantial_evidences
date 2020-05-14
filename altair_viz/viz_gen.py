@@ -317,6 +317,7 @@ output = (((st_L1 & bx_L2 & covid_L3) | main_map | (st_R1 & bx_R2)) & act_B1).co
     strokeOpacity=0
 )
 output.save('index.html')
+print('\n\n\n ################## index.html has been updated ################## \n\n\n')
 
 
 
