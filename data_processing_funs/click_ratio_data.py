@@ -18,7 +18,6 @@ url = "https://awis.api.alexa.com/api?" \
 
 payload = {}
 headers = {
-    'x-api-key': 'VOFKt7evtH7bLh4KzbkLF788cQWH9USzwhQ3P8k8'
   # 'x-api-key': '''
   # ### your_api_key_here ###
   # '''
