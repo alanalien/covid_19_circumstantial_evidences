@@ -64,7 +64,7 @@ base = alt.Chart(choro_data).mark_geoshape(
 ).encode(
 ).properties(
     width=1100,
-    height=600,
+    height=500,
 ).project('naturalEarth1')
 # ['albers', 'albersUsa', 'azimuthalEqualArea', 'azimuthalEquidistant',
 #  'conicConformal', 'conicEqualArea', 'conicEquidistant', 'equalEarth',
@@ -187,7 +187,7 @@ def line_base_layer(column, chart_title, data=all_data, drop_na=False, w=300, h=
     return base
 
 
-def multi_layer_interaction(column, chart_title, data=all_data, drop_na=False, w=300, h=250, number_format=0):
+def multi_layer_interaction(column, chart_title, data=all_data, drop_na=False, w=300, h=220, number_format=0):
     """
     call the line_base_layer function to generate a chart and make it interactive,
     by adding multiple layers
@@ -235,7 +235,7 @@ def multi_layer_interaction(column, chart_title, data=all_data, drop_na=False, w
     return new_chart
 
 
-def concat_charts(w=300, h=250):
+def concat_charts(w=300, h=220):
     """
     concatenated multiple charts by column names,
     defined by col_list the first line below
@@ -257,7 +257,7 @@ def concat_charts(w=300, h=250):
 
 def scatter_base_layer(column, chart_title, data=all_data, to_compare='confirmed',
                        add_info_col=False,
-                       w=300, h=250, legend=False):
+                       w=300, h=220, legend=False):
     """
     this function generates a scatter plot with highlighting performance,
     with X axis as a COVID fact (active/confirmed/...etc.) and Y axis with designated side fact column to compare with
@@ -327,7 +327,7 @@ def scatter_base_layer(column, chart_title, data=all_data, to_compare='confirmed
 
 
 def area_base_layer(column='active_cases', chart_title='Active Cases by Date',
-                    data=all_data, w=800, h=250):
+                    data=all_data, w=800, h=220):
     """
     this function generates an area chart that shows accumulated active cases of the selected countries
 
@@ -446,7 +446,7 @@ def chart_configures(my_chart):
 
 st_L1 = multi_layer_interaction('search_trend', 'Search Trend Index')
 bx_L2 = multi_layer_interaction('box_office_norm', 'Normalized Box Office Index', drop_na=True)
-covid_C1 = concat_charts(w=300, h=250)
+covid_C1 = concat_charts(w=300, h=220)
 st_S1 = scatter_base_layer('search_trend', 'search trend vs confirmed cases', legend=True)
 bx_S2 = scatter_base_layer('box_office_norm', 'box office vs confirmed cases', add_info_col=False, legend=True)
 covid_A1 = area_base_layer()
