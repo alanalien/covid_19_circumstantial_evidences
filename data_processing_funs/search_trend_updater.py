@@ -76,7 +76,7 @@ def trend_updater(base_df, update_df):
                     base_df[i] = base_col
                     # print(former_max_date_value, '\t\t', my_date)
                 else:
-                    print('look out!!')
+                    print('look out!!' + '\t\t ==========\t' + i)
                     pass
 
             except KeyError:

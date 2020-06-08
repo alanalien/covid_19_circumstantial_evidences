@@ -1,60 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/data_processing_funs/search_trend_data.py" description="    df = pytrend.interest_over_time()&#10;" line="17" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="e3d6cf87-0530-4e85-9708-f7adb33f7932" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/other.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/covid_19_CE.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/covid_19_CE.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/altair_viz/viz_gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/altair_viz/viz_gen.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend_num.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend_num.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_post/update_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_post/update_run.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_processing_funs/search_trend_updater.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_processing_funs/search_trend_updater.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/viz/st_L1.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/viz/st_L1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/viz/test_map.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/viz/test_map.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz_file/covid_L3.html" beforeDir="false" afterPath="$PROJECT_DIR$/viz_file/covid_L3.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz_file/test_map.html" beforeDir="false" afterPath="$PROJECT_DIR$/viz_file/test_map.html" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data_processing_funs/search_trend_data.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#19#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/data_post/update_run.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-              <folding>
-                <element signature="e#0#9#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/altair_viz/viz_gen.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="3" selection-start-column="3" selection-end-column="3" />
-              <folding>
-                <marker date="1589455100383" expanded="true" signature="10386:10387" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -62,43 +26,6 @@
         <option value="Python Script" />
       </list>
     </option>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>appe</find>
-      <find>su</find>
-      <find>delta</find>
-      <find>join</find>
-      <find>print</find>
-      <find>list</find>
-      <find>insert</find>
-      <find>new_</find>
-      <find>new_counts =</find>
-      <find>new_counts</find>
-      <find>Confirmed2</find>
-      <find>chart</find>
-      <find>2020</find>
-      <find>IndexError</find>
-      <find>MC</find>
-      <find>nan</find>
-      <find>KM</find>
-      <find>mean</find>
-      <find>Date</find>
-      <find>save</find>
-      <find>trans</find>
-      <find>FR</find>
-      <find>geodata</find>
-      <find>white</find>
-      <find>box_office</find>
-      <find>160</find>
-      <find>drop</find>
-      <find>200</find>
-      <find>leg</find>
-      <find>region</find>
-    </findStrings>
-    <replaceStrings>
-      <replace />
-    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -112,123 +39,19 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="a9e1cb0e-df84-4fe7-b81c-4e752a0aefd0" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/data_grip/box_office_data.py" />
-        <option value="$PROJECT_DIR$/altair_viz/cases_map.py" />
-        <option value="$PROJECT_DIR$/data_grip/get_countries.py" />
-        <option value="$PROJECT_DIR$/data_grip/covid_cases_data.py" />
-        <option value="$PROJECT_DIR$/altair_viz/cases_vs_boxOffice.py" />
-        <option value="$PROJECT_DIR$/altair_viz/table_merge_stack.py" />
-        <option value="$PROJECT_DIR$/data_grip/search_trend_data.py" />
-        <option value="$PROJECT_DIR$/altair_viz/cases_by_day1.py" />
-        <option value="$PROJECT_DIR$/data_get/click_ratio_data.py" />
-        <option value="$PROJECT_DIR$/data_post/git_commit.py" />
-        <option value="$PROJECT_DIR$/altair_viz/cases_vs_searchTrend.py" />
-        <option value="$PROJECT_DIR$/data_post/gif_commit_files.py" />
-        <option value="$PROJECT_DIR$/data_clean_funs/search_trend_data.py" />
-        <option value="$PROJECT_DIR$/data_get/box_office_data.py" />
-        <option value="$PROJECT_DIR$/data_clean_funs/us_box_office.py" />
-        <option value="$PROJECT_DIR$/data_clean_funs/us_box_office_data.py" />
-        <option value="$PROJECT_DIR$/data_clean_funs/box_office_data.py" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/data_get/box_office_data_get.py" />
-        <option value="$PROJECT_DIR$/altair_viz/main_map.py" />
-        <option value="$PROJECT_DIR$/data_clean_funs/table_merge_stack.py" />
-        <option value="$PROJECT_DIR$/data_get/box_office_2019_mean.py" />
-        <option value="$PROJECT_DIR$/data_get/box_office_data_mean_get.py" />
-        <option value="$PROJECT_DIR$/data_processing_funs/us_box_office_data.py" />
-        <option value="$PROJECT_DIR$/data_get/search_trend_updater.py" />
-        <option value="$PROJECT_DIR$/data_processing_funs/search_trend_data.py" />
-        <option value="$PROJECT_DIR$/data/search_trends.csv" />
-        <option value="$PROJECT_DIR$/temp/data/baiduTrendCN copy.csv" />
-        <option value="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend_num.csv" />
-        <option value="$PROJECT_DIR$/temp/data/baiduTrendCN.csv" />
-        <option value="$PROJECT_DIR$/data_processing_funs/covid_cases_data.py" />
-        <option value="$PROJECT_DIR$/temp/temp.py" />
-        <option value="$PROJECT_DIR$/data_get/covid_data_get.py" />
-        <option value="$PROJECT_DIR$/data_processing_funs/all_data_merge.py" />
-        <option value="$PROJECT_DIR$/altair_viz/pilot_viz/cases_vs_searchTrend.py" />
-        <option value="$PROJECT_DIR$/altair_viz/pilot_viz/main_map.py" />
-        <option value="$PROJECT_DIR$/altair_viz/map_reader.py" />
-        <option value="$PROJECT_DIR$/data_processing_funs/get_df_name.py" />
-        <option value="$PROJECT_DIR$/data_processing_funs/table_merge_stack.py" />
-        <option value="$PROJECT_DIR$/data_processing_funs/covid_today.py" />
-        <option value="$PROJECT_DIR$/data_processing_funs/box_office_yearly_mean.py" />
-        <option value="$PROJECT_DIR$/data_processing_funs/cn_search_trend_updater.py" />
-        <option value="$PROJECT_DIR$/data_processing_funs/box_office_data.py" />
-        <option value="$PROJECT_DIR$/data_post/git_update.py" />
-        <option value="$PROJECT_DIR$/altair_viz/viz_gen.py" />
-        <option value="$PROJECT_DIR$/data_post/covid_data_update.py" />
-        <option value="$PROJECT_DIR$/data_processing_funs/get_country_list.py" />
-        <option value="$PROJECT_DIR$/data_processing_funs/click_ratio_data.py" />
-        <option value="$PROJECT_DIR$/data_processing_funs/search_trend_updater.py" />
-        <option value="$PROJECT_DIR$/data_get/all_data_get.py" />
-        <option value="$PROJECT_DIR$/data_post/update_run.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="1680" />
-    <option name="width" value="1920" />
-    <option name="height" value="1080" />
-  </component>
+  <component name="ProjectId" id="1d1MeuNr8fbJZrB9jeRDg4evxbT" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="covid_19_circumstantial_evidences" type="b2602c69:ProjectViewProjectNode" />
-              <item name="covid_19_CE" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="covid_19_circumstantial_evidences" type="b2602c69:ProjectViewProjectNode" />
-              <item name="covid_19_CE" type="462c0819:PsiDirectoryNode" />
-              <item name="altair_viz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="covid_19_circumstantial_evidences" type="b2602c69:ProjectViewProjectNode" />
-              <item name="covid_19_CE" type="462c0819:PsiDirectoryNode" />
-              <item name="data" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="covid_19_circumstantial_evidences" type="b2602c69:ProjectViewProjectNode" />
-              <item name="covid_19_CE" type="462c0819:PsiDirectoryNode" />
-              <item name="data_get" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="covid_19_circumstantial_evidences" type="b2602c69:ProjectViewProjectNode" />
-              <item name="covid_19_CE" type="462c0819:PsiDirectoryNode" />
-              <item name="data_get" type="462c0819:PsiDirectoryNode" />
-              <item name="alt_data_sources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="covid_19_circumstantial_evidences" type="b2602c69:ProjectViewProjectNode" />
-              <item name="covid_19_CE" type="462c0819:PsiDirectoryNode" />
-              <item name="data_post" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="covid_19_circumstantial_evidences" type="b2602c69:ProjectViewProjectNode" />
-              <item name="covid_19_CE" type="462c0819:PsiDirectoryNode" />
-              <item name="data_processing_funs" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/data_get/alt_data_sources" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -242,19 +65,29 @@
       <recent name="$PROJECT_DIR$/data_get/alt_data_sources" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager" selected="Python.covid_data_update">
+    <configuration default="true" type="PythonConfigurationType" factoryName="Python">
+      <module name="covid_19_CE" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="click_ratio_data" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="covid_19_CE" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -267,6 +100,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_grip/click_ratio_data.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -288,6 +122,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_grip/covid_cases_data_clean.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -309,6 +144,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data_post/update_run.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -330,6 +166,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/dataRetriever.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -351,6 +188,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plotTest.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
@@ -380,6 +218,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585881184131</updated>
+      <workItem from="1591588477576" duration="3133000" />
+      <workItem from="1591606503116" duration="2099000" />
+      <workItem from="1591609115033" duration="5817000" />
     </task>
     <task id="LOCAL-00001" summary="add base map data&#10;data source: Natural Earth">
       <created>1587716365907</created>
@@ -612,7 +453,42 @@
       <option name="project" value="LOCAL" />
       <updated>1589457151733</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="project update:&#10;- resolve viz_gen can't auto run problem">
+      <created>1589467099133</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1589467099133</updated>
+    </task>
+    <task id="LOCAL-00035" summary="project update:&#10;- resolve viz_gen can't auto run problem">
+      <created>1589467108502</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1589467108502</updated>
+    </task>
+    <task id="LOCAL-00036" summary="project update:&#10;- removed mistakenly included api key (revoked)">
+      <created>1589467986596</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1589467986596</updated>
+    </task>
+    <task id="LOCAL-00037" summary="project update:&#10;- add driving codes comments">
+      <created>1590342777845</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1590342777845</updated>
+    </task>
+    <task id="LOCAL-00038" summary="baidu data updates commit">
+      <created>1590342814240</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1590342814240</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TodoView">
@@ -624,49 +500,8 @@
       <is-autoscroll-to-source value="true" />
     </todo-panel>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="1680" y="0" width="1920" height="1080" extended-state="0" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2538178" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="GitHub Pull Requests" order="0" sideWeight="0.4997367" weight="0.32970297" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49815693" weight="0.32970297" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49921012" weight="0.3138614" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.4997367" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32959184" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49815693" weight="0.32970297" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.48973143" weight="0.32772276" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51026857" side_tool="true" weight="0.32772276" />
-      <window_info anchor="bottom" id="Python Console" order="11" sideWeight="0.8120063" visible="true" weight="0.3108911" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2538178" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="GitHub Pull Requests" order="0" sideWeight="0.4997367" weight="0.32970297" />
-      <window_info anchor="bottom" id="Message" order="1" />
-      <window_info anchor="bottom" id="Find" order="2" sideWeight="0.49815693" weight="0.32970297" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49921012" weight="0.3138614" />
-      <window_info anchor="bottom" id="Debug" order="4" sideWeight="0.4997367" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="7" weight="0.32959184" />
-      <window_info anchor="bottom" id="Version Control" order="8" sideWeight="0.49815693" weight="0.32970297" />
-      <window_info anchor="bottom" id="Terminal" order="9" sideWeight="0.48973143" weight="0.32772276" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.51026857" side_tool="true" weight="0.32772276" />
-      <window_info active="true" anchor="bottom" id="Python Console" order="11" sideWeight="0.8120063" visible="true" weight="0.3108911" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="remove unnecessary test lines and comments" />
@@ -688,7 +523,17 @@
     <MESSAGE value="data update" />
     <MESSAGE value="post functions update" />
     <MESSAGE value="project update:&#10;- add sys.path temp appender&#10;- all_data_get.py: add if clause for get box office data, only get on Tuesdays" />
-    <option name="LAST_COMMIT_MESSAGE" value="project update:&#10;- add sys.path temp appender&#10;- all_data_get.py: add if clause for get box office data, only get on Tuesdays" />
+    <MESSAGE value="project update:&#10;- resolve viz_gen can't auto run problem" />
+    <MESSAGE value="project update:&#10;- removed mistakenly included api key (revoked)" />
+    <MESSAGE value="project update:&#10;- add driving codes comments" />
+    <MESSAGE value="baidu data updates commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="baidu data updates commit" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2305" y="241" key="search.everywhere.popup" timestamp="1591598569163">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2305" y="241" key="search.everywhere.popup/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1591598569163" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -709,308 +554,6 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/temp/viz/test3.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_grip/get_countries.py" />
-    <entry file="file://$USER_HOME$/anaconda3/envs/covid19/lib/python3.7/site-packages/pandas/core/internals/managers.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="584">
-          <caret line="205" lean-forward="true" selection-end-line="2027" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_post/git_commit.py" />
-    <entry file="file://$PROJECT_DIR$/data/country_table.csv" />
-    <entry file="file://$PROJECT_DIR$/temp/viz/test.html" />
-    <entry file="file://$PROJECT_DIR$/data/boxOffice_20200420.csv" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="184">
-            <caret line="8" column="37" selection-start-line="8" selection-start-column="37" selection-end-line="8" selection-end-column="37" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_get/box_office_data_get.py" />
-    <entry file="file://$PROJECT_DIR$/data_get/box_office_data_mean_get.py" />
-    <entry file="file://$PROJECT_DIR$/temp/data/searchTrend_20200420.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" column="16" lean-forward="true" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp/data/baiduTrendCN_original.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp/data/baidu_trend_20200508.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="362">
-          <caret line="96" column="18" lean-forward="true" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp/data/baiduTrendCN.csv" />
-    <entry file="file://$PROJECT_DIR$/temp/data/search_trends_20200508.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/covid19/lib/python3.7/site-packages/pandas/core/generic.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="217">
-          <caret line="1691" selection-start-line="1691" selection-end-line="1691" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/temp/temp.py" />
-    <entry file="file://$PROJECT_DIR$/data_get/alt_data_sources/country_codes.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_get/alt_data_sources/search_trends_20200424.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="18" column="399" selection-start-line="18" selection-start-column="399" selection-end-line="18" selection-end-column="399" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend_num.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1595" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_processing_funs/all_data_merge.py" />
-    <entry file="file://$PROJECT_DIR$/data/box_office_full.csv" />
-    <entry file="file://$PROJECT_DIR$/data_processing_funs/get_df_name.py" />
-    <entry file="file://$PROJECT_DIR$/altair_viz/pilot_viz/cases_vs_searchTrend.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="70" column="13" selection-start-line="70" selection-start-column="13" selection-end-line="70" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/covid_today.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/confirmed.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="800" selection-start-column="798" selection-end-column="800" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/altair_viz/pilot_viz/cases_vs_boxOffice.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="97" selection-start-line="97" selection-end-line="97" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-            <marker date="1589019943276" expanded="true" signature="945:998" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_get/alt_data_sources/box_office_2019_mean.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/search_trends.csv">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="71" column="26" selection-start-line="71" selection-start-column="26" selection-end-line="71" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/altair_viz/pilot_viz/cases_by_day1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-87">
-          <caret line="169" column="15" selection-start-line="169" selection-start-column="15" selection-end-line="169" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/altair_viz/map_reader.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="9" selection-start-line="22" selection-start-column="9" selection-end-line="22" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/all_data.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="12" column="6" lean-forward="true" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/anaconda3/envs/covid19/lib/python3.7/subprocess.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="487" selection-start-line="487" selection-end-line="487" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_post/git_update.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="29" selection-start-column="29" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_processing_funs/us_box_office_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_processing_funs/box_office_yearly_mean.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1173">
-          <caret line="51" column="52" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_processing_funs/covid_cases_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="115">
-          <caret line="5" column="7" lean-forward="true" selection-start-line="5" selection-start-column="7" selection-end-line="5" selection-end-column="7" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_get/all_data_get.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="86" lean-forward="true" selection-start-line="86" selection-end-line="86" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data/box_office.csv">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_processing_funs/box_office_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1296">
-          <caret line="7" column="11" lean-forward="true" selection-start-line="7" selection-start-column="11" selection-end-line="7" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_processing_funs/click_ratio_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="69">
-          <caret line="3" column="29" lean-forward="true" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_processing_funs/cn_search_trend_updater.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50">
-          <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_processing_funs/covid_today.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="23" column="100" selection-start-line="23" selection-start-column="100" selection-end-line="23" selection-end-column="100" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_processing_funs/get_country_list.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="161">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_processing_funs/search_trend_updater.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="163" column="19" lean-forward="true" selection-start-line="163" selection-start-column="19" selection-end-line="163" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_processing_funs/table_merge_stack.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_processing_funs/search_trend_data.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#19#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/altair_viz/viz_gen.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
-          <folding>
-            <marker date="1589455100383" expanded="true" signature="10386:10387" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_post/update_run.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="51" lean-forward="true" selection-start-line="11" selection-start-column="51" selection-end-line="11" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#9#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>
