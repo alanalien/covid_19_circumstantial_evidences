@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3d6cf87-0530-4e85-9708-f7adb33f7932" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/temp/before_js_scripts.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp/functions/scatter_plot_gen.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/viz_file/test_map_2.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/viz_gen_tests.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/altair_viz/viz_gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/altair_viz/viz_gen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -214,7 +210,7 @@
       <updated>1585881184131</updated>
       <workItem from="1591588477576" duration="3133000" />
       <workItem from="1591606503116" duration="2099000" />
-      <workItem from="1591609115033" duration="6865000" />
+      <workItem from="1591609115033" duration="7535000" />
     </task>
     <task id="LOCAL-00001" summary="add base map data&#10;data source: Natural Earth">
       <created>1587716365907</created>
@@ -489,7 +485,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591620871725</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="visualization codes optimize">
+      <created>1591623344303</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1591623344303</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TodoView">
@@ -532,14 +535,14 @@
     <option name="LAST_COMMIT_MESSAGE" value="visualization codes optimize" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2247" y="114" key="CommitChangelistDialog2" timestamp="1591620869608">
+    <state x="2247" y="114" key="CommitChangelistDialog2" timestamp="1591623343860">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="2247" y="114" key="CommitChangelistDialog2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1591620869608" />
-    <state x="2240" y="280" key="Vcs.Push.Dialog.v2" timestamp="1591620886382">
+    <state x="2247" y="114" key="CommitChangelistDialog2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1591623343860" />
+    <state x="2240" y="280" key="Vcs.Push.Dialog.v2" timestamp="1591623353612">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="2240" y="280" key="Vcs.Push.Dialog.v2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1591620886382" />
+    <state x="2240" y="280" key="Vcs.Push.Dialog.v2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1591623353612" />
     <state x="2305" y="241" key="search.everywhere.popup" timestamp="1591598569163">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
