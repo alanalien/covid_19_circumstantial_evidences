@@ -464,11 +464,11 @@ output = (((st_L1 | st_S1) & (bx_L2 | bx_S2)) | main_map) & (covid_C1 | covid_A1
 
 output = chart_configures(output)
 
-output.save('new_viz.html',
+output.save('altair_viz/new_viz.html',
             embed_options={'renderer': 'svg'}  # default canvas rendering, change to svg rendering
             )
 
-print('\n\n\n ################## index.html has been updated ################## \n\n\n')
+print('\n\n\n ################## new_viz.html has been updated ################## \n\n\n')
 
 # """
 # ####################################################################################################################
@@ -477,10 +477,3 @@ print('\n\n\n ################## index.html has been updated ################## 
 # ####################################################################################################################
 # ####################################################################################################################
 # """
-#
-#
-# """
-# edit html
-# """
-
-# print('\n\n\n ################## index.html has been modified ################## \n\n\n')

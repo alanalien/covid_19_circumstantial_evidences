@@ -2,13 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3d6cf87-0530-4e85-9708-f7adb33f7932" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/altair_viz/html_editor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/altair_viz/new_viz.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/base_html.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/altair_viz/html_editor.py" beforeDir="false" afterPath="$PROJECT_DIR$/altair_viz/html_editor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/altair_viz/viz_gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/altair_viz/viz_gen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_post/git_update.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_post/git_update.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend_num.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend_num.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data_post/update_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_post/update_run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/before_js_scripts.html" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,11 +56,11 @@
       <recent name="$PROJECT_DIR$/data_get/alt_data_sources" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/temp" />
       <recent name="$PROJECT_DIR$/altair_viz" />
       <recent name="$PROJECT_DIR$/data_get/alt_data_sources" />
       <recent name="$PROJECT_DIR$/altair_viz/pilot_viz" />
       <recent name="$PROJECT_DIR$/temp/data" />
-      <recent name="$PROJECT_DIR$/data_processing_funs" />
     </key>
   </component>
   <component name="RunManager" selected="Python.covid_data_update">
@@ -216,7 +219,7 @@
       <workItem from="1591588477576" duration="3133000" />
       <workItem from="1591606503116" duration="2099000" />
       <workItem from="1591609115033" duration="7601000" />
-      <workItem from="1591854834095" duration="3471000" />
+      <workItem from="1591854834095" duration="6411000" />
     </task>
     <task id="LOCAL-00001" summary="add base map data&#10;data source: Natural Earth">
       <created>1587716365907</created>
@@ -564,10 +567,10 @@
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="2443" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1591704646706" />
-    <state x="2305" y="241" key="search.everywhere.popup" timestamp="1591598569163">
+    <state x="2305" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1591880960098">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="2305" y="241" key="search.everywhere.popup/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1591598569163" />
+    <state x="2305" y="241" width="670" height="676" key="search.everywhere.popup/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1591880960098" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

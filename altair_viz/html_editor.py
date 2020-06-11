@@ -1,18 +1,22 @@
 from bs4 import BeautifulSoup
 
-with open('index.html', 'r') as my_page:
-    soup = BeautifulSoup(my_page, features='lxml')
+# read altair generated html
+with open('altair_viz/new_viz.html', 'r') as my_page:
+    viz_soup = BeautifulSoup(my_page, features='lxml')
+# read in formerly-set html layout
+with open('temp/base_html.html', 'r') as my_page:
+    index_soup = BeautifulSoup(my_page, features='lxml')
 
-# update style settings
-my_head = soup.head
-new_style = soup.new_tag('style')
-new_style.string = "<style>.error {color: red;}body {margin: auto;background: #111111;}p {float: left;font-family: 'Helvetica';width: 500px;color: #FFFFFF;margin-top: 30px;margin-left: 55px;margin-bottom: 0px;}h1 {float: left;font-size: 52pt;font-weight: bold;font-family: 'Helvetica';color: #FFFFFF;margin-top: 25px;margin-left: 60px;margin-bottom: 0px;}#vis {margin: auto;}</style>"
+# get the script part from viz html
+my_script = viz_soup.body.script
 
-soup.head.style.replace_with(new_style)
+# them replace base html's script tag with it
+index_soup.body.script.replace_with(my_script)
 
-# print(soup.head)
+# write the new soup to index.html
+with open('index.html', 'w') as new_html:
+    new_html.write(str(index_soup))
 
 
-# insert title and intro texts
-
+print('\n\n\n ################## new_viz.html has been modified ################## \n\n\n')
 
