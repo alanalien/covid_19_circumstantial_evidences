@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3d6cf87-0530-4e85-9708-f7adb33f7932" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/altair_viz/new_viz.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/temp/base_html.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/altair_viz/html_editor.py" beforeDir="false" afterPath="$PROJECT_DIR$/altair_viz/html_editor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/altair_viz/viz_gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/altair_viz/viz_gen.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend_num.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend_num.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_post/update_run.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_post/update_run.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/before_js_scripts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/temp/base_html.html" beforeDir="false" afterPath="$PROJECT_DIR$/temp/base_html.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -219,7 +213,7 @@
       <workItem from="1591588477576" duration="3133000" />
       <workItem from="1591606503116" duration="2099000" />
       <workItem from="1591609115033" duration="7601000" />
-      <workItem from="1591854834095" duration="6411000" />
+      <workItem from="1591854834095" duration="7613000" />
     </task>
     <task id="LOCAL-00001" summary="add base map data&#10;data source: Natural Earth">
       <created>1587716365907</created>
@@ -508,7 +502,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591704621219</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="automize html editor">
+      <created>1591882652875</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1591882652875</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TodoView">
@@ -548,21 +549,22 @@
     <MESSAGE value="project update:&#10;- add driving codes comments" />
     <MESSAGE value="baidu data updates commit" />
     <MESSAGE value="visualization codes optimize" />
-    <option name="LAST_COMMIT_MESSAGE" value="visualization codes optimize" />
+    <MESSAGE value="automize html editor" />
+    <option name="LAST_COMMIT_MESSAGE" value="automize html editor" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2247" y="114" key="CommitChangelistDialog2" timestamp="1591704621092">
+    <state x="2247" y="114" key="CommitChangelistDialog2" timestamp="1591882651981">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="2247" y="114" key="CommitChangelistDialog2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1591704621092" />
+    <state x="2247" y="114" key="CommitChangelistDialog2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1591882651981" />
     <state x="1780" y="100" width="1720" height="880" key="DiffContextDialog" timestamp="1591704683646">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="1780" y="100" width="1720" height="880" key="DiffContextDialog/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1591704683646" />
-    <state x="2240" y="280" key="Vcs.Push.Dialog.v2" timestamp="1591704679028">
+    <state x="2240" y="280" key="Vcs.Push.Dialog.v2" timestamp="1591882664809">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="2240" y="280" key="Vcs.Push.Dialog.v2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1591704679028" />
+    <state x="2240" y="280" key="Vcs.Push.Dialog.v2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1591882664809" />
     <state x="2443" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591704646706">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
