@@ -19,6 +19,7 @@ def auto_commit(content="data", comment="'data daily auto update'", add=False):
     # pass if nothing to commit
     except:
         pass
+
     # push the changes to remote repository
     cmd.run("git push -u origin master -f", check=True, shell=True)
 

@@ -464,7 +464,7 @@ output = (((st_L1 | st_S1) & (bx_L2 | bx_S2)) | main_map) & (covid_C1 | covid_A1
 
 output = chart_configures(output)
 
-output.save('index.html',
+output.save('new_viz.html',
             embed_options={'renderer': 'svg'}  # default canvas rendering, change to svg rendering
             )
 
