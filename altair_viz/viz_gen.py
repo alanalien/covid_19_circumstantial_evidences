@@ -21,6 +21,7 @@ today_data = pd.read_csv('data/covid_today.csv', keep_default_na=False)
 all_data = pd.read_csv('data/all_data.csv')
 all_data['date'] = pd.to_datetime(all_data['date'])  # date to datetime format
 
+
 # load geo data
 # call gis data reading functions from map_reader
 # which reads shapefile with geopandas
