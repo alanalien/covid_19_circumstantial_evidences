@@ -48,7 +48,7 @@ def trend_updater(base_df, update_df):
                     to update: direct concat
                     """
                     pass
-                # else former_max_date is less than 100, greater than doesn't exist
+                # else former_max_date is less than 100, （"> 100" doesn't exist）
                 # meaning the peak of search trend is in new data
                 elif former_max_date_value < 100:
                     # get the last date from the base_df,
