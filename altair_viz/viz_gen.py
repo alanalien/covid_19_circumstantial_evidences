@@ -315,7 +315,7 @@ def scatter_base_layer(column, chart_title, data=all_data, to_compare='confirmed
         color=color_settings,
         size=alt.condition(highlight, alt.value(30), alt.value(15)),
         #         size=alt.Size('box_office_norm', legend=None),
-        opacity=alt.condition(highlight, alt.value(1), alt.value(0.3)),
+        opacity=alt.condition(highlight, alt.value(1), alt.value(0.6)),
         tooltip=my_tooltip
     ).properties(
         title=chart_title.upper(),
@@ -466,7 +466,8 @@ output = (((st_L1 | st_S1) & (bx_L2 | bx_S2)) | main_map) & (covid_C1 | covid_A1
 output = chart_configures(output)
 
 output.save('altair_viz/new_viz.html',
-            embed_options={'renderer': 'svg'}  # default canvas rendering, change to svg rendering
+            embed_options={'renderer': 'svg'}
+            # default canvas rendering, change to svg rendering
             )
 
 print('\n\n\n ################## new_viz.html has been updated ################## \n\n\n')

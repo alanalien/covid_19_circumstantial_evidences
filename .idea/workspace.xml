@@ -3,6 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e3d6cf87-0530-4e85-9708-f7adb33f7932" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/altair_viz/viz_gen.py" beforeDir="false" afterPath="$PROJECT_DIR$/altair_viz/viz_gen.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/viz_gen_tests.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/viz_gen_tests.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -215,7 +217,7 @@
       <workItem from="1591898796444" duration="1235000" />
       <workItem from="1592376401922" duration="12324000" />
       <workItem from="1592826376534" duration="812000" />
-      <workItem from="1592855800151" duration="2859000" />
+      <workItem from="1592855800151" duration="7980000" />
     </task>
     <task id="LOCAL-00001" summary="add base map data&#10;data source: Natural Earth">
       <created>1587716365907</created>
@@ -525,7 +527,21 @@
       <option name="project" value="LOCAL" />
       <updated>1592404107999</updated>
     </task>
-    <option name="localTasksCounter" value="45" />
+    <task id="LOCAL-00045" summary="add new instruction texts to html">
+      <created>1592877854926</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1592877854926</updated>
+    </task>
+    <task id="LOCAL-00046" summary="add new instruction texts to html">
+      <created>1592877926348</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1592877926348</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TodoView">
@@ -541,7 +557,6 @@
     <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add Alair pilot-visualization codes results" />
     <MESSAGE value="add altair pilot plots" />
     <MESSAGE value="rename and finalize" />
     <MESSAGE value="auto update" />
@@ -566,21 +581,22 @@
     <MESSAGE value="automize html editor" />
     <MESSAGE value="update run fix" />
     <MESSAGE value="add data source display" />
-    <option name="LAST_COMMIT_MESSAGE" value="add data source display" />
+    <MESSAGE value="add new instruction texts to html" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new instruction texts to html" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="2756" y="77" key="CommitChangelistDialog2" timestamp="1592404107833">
+    <state x="2756" y="77" key="CommitChangelistDialog2" timestamp="1592877925647">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="2756" y="77" key="CommitChangelistDialog2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1592404107833" />
+    <state x="2756" y="77" key="CommitChangelistDialog2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1592877925647" />
     <state x="1780" y="100" width="1720" height="880" key="DiffContextDialog" timestamp="1591704683646">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="1780" y="100" width="1720" height="880" key="DiffContextDialog/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1591704683646" />
-    <state x="2240" y="280" key="Vcs.Push.Dialog.v2" timestamp="1592404111397">
+    <state x="2240" y="280" key="Vcs.Push.Dialog.v2" timestamp="1592877928392">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="2240" y="280" key="Vcs.Push.Dialog.v2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1592404111397" />
+    <state x="2240" y="280" key="Vcs.Push.Dialog.v2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1592877928392" />
     <state x="2443" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591704646706">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
