@@ -1,0 +1,1 @@
+python PycharmProjects/covid_19_CE/data_post/update_run.py
