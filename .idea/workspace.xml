@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e3d6cf87-0530-4e85-9708-f7adb33f7932" name="Default Changelist" comment="" />
+    <list default="true" id="e3d6cf87-0530-4e85-9708-f7adb33f7932" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/confirmed.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/confirmed.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/death.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/death.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/recovered.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/recovered.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/search_trends.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/search_trends.csv" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -215,6 +221,7 @@
       <workItem from="1592826376534" duration="812000" />
       <workItem from="1592855800151" duration="8138000" />
       <workItem from="1593028165396" duration="157000" />
+      <workItem from="1595152042728" duration="2215000" />
     </task>
     <task id="LOCAL-00001" summary="add base map data&#10;data source: Natural Earth">
       <created>1587716365907</created>
@@ -589,6 +596,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="bug fix" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="2531" y="410" key="#Notifications" timestamp="1595152376117">
+      <screen x="1680" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2531" y="410" key="#Notifications/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1595152376117" />
     <state x="2756" y="77" key="CommitChangelistDialog2" timestamp="1593028309107">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
@@ -609,10 +620,10 @@
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="2347" y="295" width="586" height="490" key="find.popup/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1593028313320" />
-    <state x="2305" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1592858703243">
+    <state x="2305" y="241" width="670" height="676" key="search.everywhere.popup" timestamp="1595159573161">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="2305" y="241" width="670" height="676" key="search.everywhere.popup/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1592858703243" />
+    <state x="2305" y="241" width="670" height="676" key="search.everywhere.popup/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1595159573161" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
