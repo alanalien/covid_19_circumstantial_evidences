@@ -1,0 +1,80 @@
+<!doctype html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+        <title>COVID-19 Side Facts</title>
+    <style>
+        .error {
+            color: #ff0000;
+        }
+        body {
+            margin: auto;
+            background: #111111;
+        }
+        p {
+            float: left;
+            font-family: 'Helvetica', sans-serif;
+            width: 500px;
+            color: #FFFFFF;
+            margin-top: 30px;
+            margin-left: 55px;
+            margin-bottom: 0;
+        }
+        h1 {
+            float: left;
+            font-size: 56pt;
+            font-weight: bold;
+            font-family: 'Helvetica', sans-serif;
+            color: #FFFFFF;
+            margin-top: 25px;
+            margin-left: 60px;
+            margin-bottom: 0;
+        }
+        footer {
+            font-family: 'Helvetica', sans-serif;
+            color: #FFFFFF;
+            margin-top: 5px;
+            margin-left: 55px;
+            margin-bottom: 20px;
+        }
+        a {
+            font-family: 'Helvetica', sans-serif;
+            font-width: light;
+            color: #FFFFFF;
+        }
+
+        #vis {
+          margin: auto;
+        }
+      </style>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.8.1"></script>
+      <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+    </head>
+    <body>
+        <div id="introduction">
+            <p>
+                This dashboard intended to showcase the "side facts" of the current pandemic, such as the Google searching trends and the box office performance, to see how people from different countries reacting to the consistently updating epidemic data. Click on the map to select a country or shift-click to multiple select countries to view the side facts.
+            </p>
+            <h1>
+                COVID-19 SIDE FACTS DASHBOARD
+            </h1>
+        </div>
+        <div id="vis"></div>
+        <script>
+
+        </script>
+    </body>
+    <footer>
+        By: Yiren Wang |
+        <a href="mailto:yirenwang.design@gmail.com">yirenwang.design@gmail.com</a> |
+        Last Updated:
+        <span></span> EDT
+        <br>
+        Data Source:
+        <a href="https://github.com/CSSEGISandData/COVID-19">John Hopkins COVID-19 Data Portal;</a>
+        <a href="https://trends.google.com/trends/?geo=US">Google Trends;</a>
+        <a href="http://index.baidu.com/v2/index.html#/">Baidu Index;</a>
+        <a href="https://www.boxofficemojo.com/">IMDB Box Office Mojo</a>
+    </footer>
+</html>

@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e3d6cf87-0530-4e85-9708-f7adb33f7932" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/data_post/run.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/temp/base_html_bkup_0728.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/altair_viz/new_viz.html" beforeDir="false" afterPath="$PROJECT_DIR$/altair_viz/new_viz.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/all_data.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/all_data.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/search_trends.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data/search_trends.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend_num.csv" beforeDir="false" afterPath="$PROJECT_DIR$/data_get/alt_data_sources/baidu_trend_num.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/data/search_trends_20200716.csv" beforeDir="false" afterPath="$PROJECT_DIR$/temp/data/search_trends_20200716.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,19 +43,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data_get/alt_data_sources" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/temp" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data_get/alt_data_sources" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/temp" />
       <recent name="$PROJECT_DIR$/altair_viz" />
       <recent name="$PROJECT_DIR$/data_get/alt_data_sources" />
       <recent name="$PROJECT_DIR$/altair_viz/pilot_viz" />
       <recent name="$PROJECT_DIR$/temp/data" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/temp" />
+      <recent name="$PROJECT_DIR$/data_get/alt_data_sources" />
     </key>
   </component>
   <component name="RunManager" selected="Python.covid_data_update">
@@ -227,7 +223,9 @@
       <workItem from="1593028165396" duration="157000" />
       <workItem from="1595152042728" duration="2456000" />
       <workItem from="1595159957358" duration="47000" />
-      <workItem from="1595161207053" duration="1600000" />
+      <workItem from="1595161207053" duration="1727000" />
+      <workItem from="1595163565528" duration="255000" />
+      <workItem from="1595944004405" duration="368000" />
     </task>
     <task id="LOCAL-00001" summary="add base map data&#10;data source: Natural Earth">
       <created>1587716365907</created>
@@ -565,7 +563,14 @@
       <option name="project" value="LOCAL" />
       <updated>1595159909953</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="auto data update">
+      <created>1595163491247</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1595163491247</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TodoView">
@@ -581,7 +586,6 @@
     <option name="version" value="2" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="auto update" />
     <MESSAGE value="data" />
     <MESSAGE value="project update: bug fix, add baidu trend processor" />
     <MESSAGE value="project update: data processing finalized" />
@@ -606,17 +610,18 @@
     <MESSAGE value="add new instruction texts to html" />
     <MESSAGE value="bug fix" />
     <MESSAGE value="add 3-month data backup" />
-    <option name="LAST_COMMIT_MESSAGE" value="add 3-month data backup" />
+    <MESSAGE value="auto data update" />
+    <option name="LAST_COMMIT_MESSAGE" value="auto data update" />
   </component>
   <component name="WindowStateProjectService">
     <state x="2531" y="410" key="#Notifications" timestamp="1595152376117">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="2531" y="410" key="#Notifications/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1595152376117" />
-    <state x="2756" y="77" key="CommitChangelistDialog2" timestamp="1595159909795">
+    <state x="2756" y="77" key="CommitChangelistDialog2" timestamp="1595163489248">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="2756" y="77" key="CommitChangelistDialog2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1595159909795" />
+    <state x="2756" y="77" key="CommitChangelistDialog2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1595163489248" />
     <state x="1780" y="100" width="1720" height="880" key="DiffContextDialog" timestamp="1591704683646">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
@@ -625,10 +630,10 @@
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
     <state x="2149" y="179" key="SettingsEditor/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1595159978110" />
-    <state x="2240" y="280" key="Vcs.Push.Dialog.v2" timestamp="1595159912481">
+    <state x="2240" y="280" key="Vcs.Push.Dialog.v2" timestamp="1595163493379">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
-    <state x="2240" y="280" key="Vcs.Push.Dialog.v2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1595159912481" />
+    <state x="2240" y="280" key="Vcs.Push.Dialog.v2/1680.0.1920.1080/0.0.1680.1050@1680.0.1920.1080" timestamp="1595163493379" />
     <state x="2443" y="461" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1591704646706">
       <screen x="1680" y="0" width="1920" height="1080" />
     </state>
